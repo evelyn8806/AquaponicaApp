@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "edu.uph.m24si2.aquaponica"
-    compileSdk = 37
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "edu.uph.m24si2.aquaponica"

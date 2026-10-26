@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "edu.uph.m24si2.aquaponica"
+    namespace = "edu.uph.m24si2.aquaponicaapp"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "edu.uph.m24si2.aquaponica"
+        applicationId = "edu.uph.m24si2.aquaponicaapp"
         minSdk = 30
         targetSdk = 36
         versionCode = 1

@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.core:core:1.19.0@aar" external-system-id="GRADLE">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/9.4.1/transforms/3c197ebbb4501dbd2687aac325fae8ee/transformed/core-1.19.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/9.4.1/transforms/3c197ebbb4501dbd2687aac325fae8ee/transformed/core-1.19.0/res" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/9.4.1/transforms/3c197ebbb4501dbd2687aac325fae8ee/transformed/core-1.19.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/9.4.1/transforms/3c197ebbb4501dbd2687aac325fae8ee/transformed/core-1.19.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/androidx.core/core/1.19.0/df0fc1c85262ace786b7aa8d45fb3dc7f127ae24/core-1.19.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/androidx.core/core/1.19.0/26479f91ea0d83ae369a781b380b9b9a54551741/core-1.19.0-samples-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

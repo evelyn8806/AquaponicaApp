@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "787956169078",
+    "firebase_url": "https://aquponica-default-rtdb.firebaseio.com",
+    "project_id": "aquponica",
+    "storage_bucket": "aquponica.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787956169078:android:6cc22327e54611a729a257",
+        "android_client_info": {
+          "package_name": "edu.uph.m24si2.aquaponica"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjg7LdPIyJNSORHhD8yNmfv14Sg2iStRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787956169078:android:fcac2857caef61aa29a257",
+        "android_client_info": {
+          "package_name": "edu.uph.m24si2.aquaponicaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjg7LdPIyJNSORHhD8yNmfv14Sg2iStRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -8,7 +8,7 @@ android {
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "edu.uph.m24si2.aquaponica"
+        applicationId = "edu.uph.m24si2.aquaponicaapp"
         minSdk = 30
         targetSdk = 37
         versionCode = 1

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "edu.uph.m24si2.aquaponicaapp-mergeDebugResources-38:/values-v30/values-v30.xml",
+            "map": [
+                {
+                    "source": "/Users/evelynprakusya/.gradle/caches/9.4.1/transforms/6cc036201930188f39fed9afdc53db27/transformed/material3/res/values-v30/values-v30.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "72",
+                        "endOffsets": "123"
+                    }
+                }
+            ]
+        }
+    ]
+}

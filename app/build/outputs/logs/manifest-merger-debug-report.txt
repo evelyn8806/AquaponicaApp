@@ -23,12 +23,21 @@ MERGED from [androidx.navigationevent:navigationevent-android:1.0.0] /Users/evel
 MERGED from [androidx.navigationevent:navigationevent-compose-android:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/521342e1d4c106f5ed17232fd13ca7f1/transformed/navigationevent-compose/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.activity:activity-ktx:1.13.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/d57ad809028805d6779ebf6881a0419c/transformed/activity-ktx-1.13.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2cb7a766d68e9764abe589f59f39d385/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:17:1-75:12
 MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:2:1-26:12
+MERGED from [androidx.credentials:credentials:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/7e15b84483a5dd337f38b5ea6f3eb4ef/transformed/credentials-1.2.0-rc01/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:17:1-44:12
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/d738c6f8daf2a231140fa657b7e78f91/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/7bac798120c9056dcbb805785c774f3d/transformed/recaptcha-18.6.1/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.play:integrity:1.3.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/bb33727e99883e15a499a0f07acd7c46/transformed/integrity-1.3.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2a3aa17414232a6288c6356790611cd1/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:15:1-25:12
-MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/138a7ed9cdce4822f1eca88112b732d5/transformed/firebase-database-collection-18.0.1/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:16:1-24:12
-MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/f8990bfb6516b74f387729b5b1d1c5c8/transformed/firebase-auth-interop-19.0.2/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e61bbda80a4c371b5b4cbde5c519b037/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/138a7ed9cdce4822f1eca88112b732d5/transformed/firebase-database-collection-18.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/0af4e75fdde2302a80ec44588178d25e/transformed/play-services-fido-20.1.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c020775cbc93103abe867081bb8074c4/transformed/play-services-auth-base-18.0.4/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:16:1-24:12
 MERGED from [androidx.window:window-core-android:1.5.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2fc8fd70ea750f5942849ed5d0771418/transformed/window-core/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.window:window:1.5.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/485047339f93db4e046d36a84eaf09b9/transformed/window-1.5.0/AndroidManifest.xml:17:1-31:12
 MERGED from [androidx.compose.runtime:runtime-saveable-android:1.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/6ed6699075e8b80b3a600809e3161f62/transformed/runtime-saveable/AndroidManifest.xml:2:1-7:12
@@ -38,26 +47,27 @@ MERGED from [androidx.savedstate:savedstate-ktx:1.4.0] /Users/evelynprakusya/.gr
 MERGED from [androidx.savedstate:savedstate-android:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/99f245ddaaf673a9f7f35f34e18a69d5/transformed/savedstate/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate-compose-android:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/06464859ff80841bd5cf82d1968add9f/transformed/savedstate-compose/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.runtime:runtime-android:1.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1dc92d7f79050c26559fb1b384d5a671/transformed/runtime/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.datastore:datastore-core-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/8bba33a6b1bab9c1f52f6b84a6b4981f/transformed/datastore-core-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.datastore:datastore-preferences-core-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/fab125b7ccf430f1fca6f03bc6cf86c5/transformed/datastore-preferences-core-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.datastore:datastore-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2640e71f711b6c62043b4af5135ceb0d/transformed/datastore-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.datastore:datastore-preferences-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/35d2c03911c94fe9c704fae8d7e651b1/transformed/datastore-preferences-release/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.6.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/202bd29252012f88d272188bc5c2812f/transformed/transition-1.6.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/5e71cac62e730bf9032d94fe0dca8f46/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/84c5160e6e91de80500769b14935cdb1/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/721990d87a63819a49adee50a8a67988/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/432b185e02fa8d068c1d1a3f8e79d1d8/transformed/emoji2-1.4.0/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/25b8456ff94ce0864152cdddc2ebfb8e/transformed/lifecycle-livedata-core-ktx-2.11.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/f07928f9f17dcbc8e45e4d11f2527e3e/transformed/lifecycle-process-2.11.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/25b8456ff94ce0864152cdddc2ebfb8e/transformed/lifecycle-livedata-core-ktx-2.11.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/87f5c642a014381d87195283efdc66ab/transformed/lifecycle-livedata-core-2.11.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/8af8593ecb03eb558b3845924769395f/transformed/lifecycle-livedata-2.11.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1a6f0109e0038729a303a47e9972e4e4/transformed/play-services-tasks-18.1.0/AndroidManifest.xml:2:1-6:12
+MERGED from [androidx.datastore:datastore-core-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/8bba33a6b1bab9c1f52f6b84a6b4981f/transformed/datastore-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.datastore:datastore-preferences-core-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/fab125b7ccf430f1fca6f03bc6cf86c5/transformed/datastore-preferences-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.datastore:datastore-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2640e71f711b6c62043b4af5135ceb0d/transformed/datastore-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/35d2c03911c94fe9c704fae8d7e651b1/transformed/datastore-preferences-release/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/d6e79998de4a8d261aea05b67dd676a6/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:2:1-5:12
 MERGED from [com.google.android.gms:play-services-basement:18.8.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e3ae24dfa510043ae5077418f4bfb6bb/transformed/play-services-basement-18.8.0/AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/bb6b8da5e7989de6e1813305297faf65/transformed/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1e97da02fcecc706fe86f22a0254016c/transformed/lifecycle-viewmodel-2.11.0/AndroidManifest.xml:2:1-5:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/d059639ebc89853c6c5b8d5ac16dcd3b/transformed/lifecycle-viewmodel/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/a8aed7f45268d7c8588291637afc4fdc/transformed/lifecycle-viewmodel-savedstate/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core-ktx:1.19.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2f4c95008bf1c1a977102427c2082cf9/transformed/core-ktx-1.19.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.browser:browser:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/b16f904fac303fcfd63da1b32f6c6eb6/transformed/browser-1.4.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.autofill:autofill:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ea940b2425bf025984f8f34b079ca65e/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/cd0c111951100de89021290c0771d31d/transformed/graphics-path-1.0.1/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/a839871ea6e607eaa85c9fcc837f22a5/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -80,13 +90,15 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/evelynprakusya/.grad
 MERGED from [androidx.tracing:tracing:1.2.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/acb3c813a956cb855b5b590c01a5df16/transformed/tracing-1.2.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e7070bc4f31ed0bdfc266f30a9cb0019/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/0c7dddf764fb86ff28c4032152088deb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c5d7bc69deae98cc43d0bd38962296e4/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:19.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c2bbe3c1cbdadd7bc2d3971389fbafda/transformed/firebase-components-19.0.0/AndroidManifest.xml:15:1-20:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/7bdca73e52bdff79a6c3e6bd649afd26/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/9acd2ac4c8dcf0f74f089a2ea9b0c55f/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c5d7bc69deae98cc43d0bd38962296e4/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/dffce0c26603aac77d13dfa3455ca3dd/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/33ed188dbac43276f0b4e7495ccd282b/transformed/googleid-1.1.0/AndroidManifest.xml:2:1-7:12
 MERGED from [io.grpc:grpc-android:1.62.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/b1910650be886248e77a2066f9c1b0f8/transformed/grpc-android-1.62.2/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e47104e3f2ef5ec97d87f0e966ba4602/transformed/protolite-well-known-types-18.0.1/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.play:core-common:2.0.3] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e68f57678ae6a6c87f42aff2c7025154/transformed/core-common-2.0.3/AndroidManifest.xml:2:1-21:12
 	package
 		INJECTED from /Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -102,24 +114,34 @@ ADDED from /Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml
 INJECTED from /Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:5:5-25:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.10.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/aacd303376c8da13311eed08971e1339/transformed/ui-tooling/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.10.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/aacd303376c8da13311eed08971e1339/transformed/ui-tooling/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:28:5-73:19
+MERGED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:13:5-24:19
 MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:13:5-24:19
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:23:5-42:19
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:23:5-42:19
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.play:integrity:1.3.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/bb33727e99883e15a499a0f07acd7c46/transformed/integrity-1.3.0/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.play:integrity:1.3.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/bb33727e99883e15a499a0f07acd7c46/transformed/integrity-1.3.0/AndroidManifest.xml:5:5-6:19
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2a3aa17414232a6288c6356790611cd1/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:23:5-20
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2a3aa17414232a6288c6356790611cd1/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:23:5-20
-MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/f8990bfb6516b74f387729b5b1d1c5c8/transformed/firebase-auth-interop-19.0.2/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/f8990bfb6516b74f387729b5b1d1c5c8/transformed/firebase-auth-interop-19.0.2/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e61bbda80a4c371b5b4cbde5c519b037/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e61bbda80a4c371b5b4cbde5c519b037/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:22:5-39:19
 MERGED from [com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/0af4e75fdde2302a80ec44588178d25e/transformed/play-services-fido-20.1.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/0af4e75fdde2302a80ec44588178d25e/transformed/play-services-fido-20.1.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
 MERGED from [androidx.window:window:1.5.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/485047339f93db4e046d36a84eaf09b9/transformed/window-1.5.0/AndroidManifest.xml:22:5-29:19
 MERGED from [androidx.window:window:1.5.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/485047339f93db4e046d36a84eaf09b9/transformed/window-1.5.0/AndroidManifest.xml:22:5-29:19
 MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/432b185e02fa8d068c1d1a3f8e79d1d8/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/432b185e02fa8d068c1d1a3f8e79d1d8/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/f07928f9f17dcbc8e45e4d11f2527e3e/transformed/lifecycle-process-2.11.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/f07928f9f17dcbc8e45e4d11f2527e3e/transformed/lifecycle-process-2.11.0/AndroidManifest.xml:23:5-33:19
-MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1a6f0109e0038729a303a47e9972e4e4/transformed/play-services-tasks-18.1.0/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1a6f0109e0038729a303a47e9972e4e4/transformed/play-services-tasks-18.1.0/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/d6e79998de4a8d261aea05b67dd676a6/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/d6e79998de4a8d261aea05b67dd676a6/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
 MERGED from [com.google.android.gms:play-services-basement:18.8.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e3ae24dfa510043ae5077418f4bfb6bb/transformed/play-services-basement-18.8.0/AndroidManifest.xml:20:5-24:19
 MERGED from [com.google.android.gms:play-services-basement:18.8.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e3ae24dfa510043ae5077418f4bfb6bb/transformed/play-services-basement-18.8.0/AndroidManifest.xml:20:5-24:19
 MERGED from [androidx.core:core:1.19.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/3c197ebbb4501dbd2687aac325fae8ee/transformed/core-1.19.0/AndroidManifest.xml:28:5-89
@@ -132,6 +154,8 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/evelynprakusya/.grad
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/fe0d30d77d943e0b7825083566ea3491/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/0c7dddf764fb86ff28c4032152088deb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/0c7dddf764fb86ff28c4032152088deb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.play:core-common:2.0.3] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e68f57678ae6a6c87f42aff2c7025154/transformed/core-common-2.0.3/AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.android.play:core-common:2.0.3] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e68f57678ae6a6c87f42aff2c7025154/transformed/core-common-2.0.3/AndroidManifest.xml:11:5-19:19
 	android:extractNativeLibs
 		INJECTED from /Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml
 	android:appComponentFactory
@@ -214,18 +238,36 @@ MERGED from [androidx.activity:activity-ktx:1.13.0] /Users/evelynprakusya/.gradl
 MERGED from [androidx.activity:activity-ktx:1.13.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/d57ad809028805d6779ebf6881a0419c/transformed/activity-ktx-1.13.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2cb7a766d68e9764abe589f59f39d385/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
 MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2cb7a766d68e9764abe589f59f39d385/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:21:5-23:151
+MERGED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:21:5-23:151
 MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:6:5-44
+MERGED from [androidx.credentials:credentials:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/7e15b84483a5dd337f38b5ea6f3eb4ef/transformed/credentials-1.2.0-rc01/AndroidManifest.xml:5:5-44
+MERGED from [androidx.credentials:credentials:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/7e15b84483a5dd337f38b5ea6f3eb4ef/transformed/credentials-1.2.0-rc01/AndroidManifest.xml:5:5-44
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:21:5-44
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:21:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/d738c6f8daf2a231140fa657b7e78f91/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/d738c6f8daf2a231140fa657b7e78f91/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/7bac798120c9056dcbb805785c774f3d/transformed/recaptcha-18.6.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/7bac798120c9056dcbb805785c774f3d/transformed/recaptcha-18.6.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.play:integrity:1.3.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/bb33727e99883e15a499a0f07acd7c46/transformed/integrity-1.3.0/AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.play:integrity:1.3.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/bb33727e99883e15a499a0f07acd7c46/transformed/integrity-1.3.0/AndroidManifest.xml:4:5-44
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2a3aa17414232a6288c6356790611cd1/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2a3aa17414232a6288c6356790611cd1/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/138a7ed9cdce4822f1eca88112b732d5/transformed/firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/138a7ed9cdce4822f1eca88112b732d5/transformed/firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:18:5-43
-MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/f8990bfb6516b74f387729b5b1d1c5c8/transformed/firebase-auth-interop-19.0.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/f8990bfb6516b74f387729b5b1d1c5c8/transformed/firebase-auth-interop-19.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e61bbda80a4c371b5b4cbde5c519b037/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e61bbda80a4c371b5b4cbde5c519b037/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:19:5-44
 MERGED from [com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/138a7ed9cdce4822f1eca88112b732d5/transformed/firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/138a7ed9cdce4822f1eca88112b732d5/transformed/firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/0af4e75fdde2302a80ec44588178d25e/transformed/play-services-fido-20.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/0af4e75fdde2302a80ec44588178d25e/transformed/play-services-fido-20.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c020775cbc93103abe867081bb8074c4/transformed/play-services-auth-base-18.0.4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c020775cbc93103abe867081bb8074c4/transformed/play-services-auth-base-18.0.4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:18:5-43
 MERGED from [androidx.window:window-core-android:1.5.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2fc8fd70ea750f5942849ed5d0771418/transformed/window-core/AndroidManifest.xml:5:5-44
 MERGED from [androidx.window:window-core-android:1.5.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2fc8fd70ea750f5942849ed5d0771418/transformed/window-core/AndroidManifest.xml:5:5-44
 MERGED from [androidx.window:window:1.5.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/485047339f93db4e046d36a84eaf09b9/transformed/window-1.5.0/AndroidManifest.xml:20:5-44
@@ -244,14 +286,6 @@ MERGED from [androidx.savedstate:savedstate-compose-android:1.4.0] /Users/evelyn
 MERGED from [androidx.savedstate:savedstate-compose-android:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/06464859ff80841bd5cf82d1968add9f/transformed/savedstate-compose/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.runtime:runtime-android:1.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1dc92d7f79050c26559fb1b384d5a671/transformed/runtime/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.runtime:runtime-android:1.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1dc92d7f79050c26559fb1b384d5a671/transformed/runtime/AndroidManifest.xml:5:5-44
-MERGED from [androidx.datastore:datastore-core-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/8bba33a6b1bab9c1f52f6b84a6b4981f/transformed/datastore-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.datastore:datastore-core-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/8bba33a6b1bab9c1f52f6b84a6b4981f/transformed/datastore-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.datastore:datastore-preferences-core-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/fab125b7ccf430f1fca6f03bc6cf86c5/transformed/datastore-preferences-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.datastore:datastore-preferences-core-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/fab125b7ccf430f1fca6f03bc6cf86c5/transformed/datastore-preferences-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.datastore:datastore-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2640e71f711b6c62043b4af5135ceb0d/transformed/datastore-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.datastore:datastore-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2640e71f711b6c62043b4af5135ceb0d/transformed/datastore-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.datastore:datastore-preferences-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/35d2c03911c94fe9c704fae8d7e651b1/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.datastore:datastore-preferences-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/35d2c03911c94fe9c704fae8d7e651b1/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.6.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/202bd29252012f88d272188bc5c2812f/transformed/transition-1.6.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.transition:transition:1.6.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/202bd29252012f88d272188bc5c2812f/transformed/transition-1.6.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/5e71cac62e730bf9032d94fe0dca8f46/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
@@ -262,16 +296,24 @@ MERGED from [androidx.loader:loader:1.0.0] /Users/evelynprakusya/.gradle/caches/
 MERGED from [androidx.loader:loader:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/721990d87a63819a49adee50a8a67988/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/432b185e02fa8d068c1d1a3f8e79d1d8/transformed/emoji2-1.4.0/AndroidManifest.xml:21:5-44
 MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/432b185e02fa8d068c1d1a3f8e79d1d8/transformed/emoji2-1.4.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/25b8456ff94ce0864152cdddc2ebfb8e/transformed/lifecycle-livedata-core-ktx-2.11.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/25b8456ff94ce0864152cdddc2ebfb8e/transformed/lifecycle-livedata-core-ktx-2.11.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.lifecycle:lifecycle-process:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/f07928f9f17dcbc8e45e4d11f2527e3e/transformed/lifecycle-process-2.11.0/AndroidManifest.xml:21:5-44
 MERGED from [androidx.lifecycle:lifecycle-process:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/f07928f9f17dcbc8e45e4d11f2527e3e/transformed/lifecycle-process-2.11.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/25b8456ff94ce0864152cdddc2ebfb8e/transformed/lifecycle-livedata-core-ktx-2.11.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/25b8456ff94ce0864152cdddc2ebfb8e/transformed/lifecycle-livedata-core-ktx-2.11.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/87f5c642a014381d87195283efdc66ab/transformed/lifecycle-livedata-core-2.11.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/87f5c642a014381d87195283efdc66ab/transformed/lifecycle-livedata-core-2.11.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/8af8593ecb03eb558b3845924769395f/transformed/lifecycle-livedata-2.11.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/8af8593ecb03eb558b3845924769395f/transformed/lifecycle-livedata-2.11.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1a6f0109e0038729a303a47e9972e4e4/transformed/play-services-tasks-18.1.0/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1a6f0109e0038729a303a47e9972e4e4/transformed/play-services-tasks-18.1.0/AndroidManifest.xml:4:5-43
+MERGED from [androidx.datastore:datastore-core-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/8bba33a6b1bab9c1f52f6b84a6b4981f/transformed/datastore-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-core-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/8bba33a6b1bab9c1f52f6b84a6b4981f/transformed/datastore-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-preferences-core-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/fab125b7ccf430f1fca6f03bc6cf86c5/transformed/datastore-preferences-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-preferences-core-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/fab125b7ccf430f1fca6f03bc6cf86c5/transformed/datastore-preferences-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2640e71f711b6c62043b4af5135ceb0d/transformed/datastore-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2640e71f711b6c62043b4af5135ceb0d/transformed/datastore-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/35d2c03911c94fe9c704fae8d7e651b1/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.7] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/35d2c03911c94fe9c704fae8d7e651b1/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/d6e79998de4a8d261aea05b67dd676a6/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/d6e79998de4a8d261aea05b67dd676a6/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
 MERGED from [com.google.android.gms:play-services-basement:18.8.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e3ae24dfa510043ae5077418f4bfb6bb/transformed/play-services-basement-18.8.0/AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-basement:18.8.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e3ae24dfa510043ae5077418f4bfb6bb/transformed/play-services-basement-18.8.0/AndroidManifest.xml:18:5-43
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/bb6b8da5e7989de6e1813305297faf65/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -284,6 +326,8 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.11.0] /
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/a8aed7f45268d7c8588291637afc4fdc/transformed/lifecycle-viewmodel-savedstate/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core-ktx:1.19.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2f4c95008bf1c1a977102427c2082cf9/transformed/core-ktx-1.19.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core-ktx:1.19.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2f4c95008bf1c1a977102427c2082cf9/transformed/core-ktx-1.19.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.browser:browser:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/b16f904fac303fcfd63da1b32f6c6eb6/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/b16f904fac303fcfd63da1b32f6c6eb6/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.autofill:autofill:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ea940b2425bf025984f8f34b079ca65e/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.autofill:autofill:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ea940b2425bf025984f8f34b079ca65e/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/cd0c111951100de89021290c0771d31d/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
@@ -328,20 +372,26 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/evelynprakusya/.gr
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e7070bc4f31ed0bdfc266f30a9cb0019/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/0c7dddf764fb86ff28c4032152088deb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/0c7dddf764fb86ff28c4032152088deb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c5d7bc69deae98cc43d0bd38962296e4/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c5d7bc69deae98cc43d0bd38962296e4/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:19.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c2bbe3c1cbdadd7bc2d3971389fbafda/transformed/firebase-components-19.0.0/AndroidManifest.xml:18:5-44
 MERGED from [com.google.firebase:firebase-components:19.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c2bbe3c1cbdadd7bc2d3971389fbafda/transformed/firebase-components-19.0.0/AndroidManifest.xml:18:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/7bdca73e52bdff79a6c3e6bd649afd26/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/7bdca73e52bdff79a6c3e6bd649afd26/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/9acd2ac4c8dcf0f74f089a2ea9b0c55f/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/9acd2ac4c8dcf0f74f089a2ea9b0c55f/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c5d7bc69deae98cc43d0bd38962296e4/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c5d7bc69deae98cc43d0bd38962296e4/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/dffce0c26603aac77d13dfa3455ca3dd/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/dffce0c26603aac77d13dfa3455ca3dd/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/33ed188dbac43276f0b4e7495ccd282b/transformed/googleid-1.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/33ed188dbac43276f0b4e7495ccd282b/transformed/googleid-1.1.0/AndroidManifest.xml:5:5-44
 MERGED from [io.grpc:grpc-android:1.62.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/b1910650be886248e77a2066f9c1b0f8/transformed/grpc-android-1.62.2/AndroidManifest.xml:5:5-44
 MERGED from [io.grpc:grpc-android:1.62.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/b1910650be886248e77a2066f9c1b0f8/transformed/grpc-android-1.62.2/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e47104e3f2ef5ec97d87f0e966ba4602/transformed/protolite-well-known-types-18.0.1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e47104e3f2ef5ec97d87f0e966ba4602/transformed/protolite-well-known-types-18.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.play:core-common:2.0.3] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e68f57678ae6a6c87f42aff2c7025154/transformed/core-common-2.0.3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.play:core-common:2.0.3] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e68f57678ae6a6c87f42aff2c7025154/transformed/core-common-2.0.3/AndroidManifest.xml:7:5-9:41
+	tools:overrideLibrary
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:23:9-148
 	android:targetSdkVersion
 		INJECTED from /Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
@@ -352,28 +402,92 @@ ADDED from [androidx.compose.ui:ui-tooling-android:1.10.4] /Users/evelynprakusya
 		ADDED from [androidx.compose.ui:ui-tooling-android:1.10.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/aacd303376c8da13311eed08971e1339/transformed/ui-tooling/AndroidManifest.xml:25:13-36
 	android:name
 		ADDED from [androidx.compose.ui:ui-tooling-android:1.10.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/aacd303376c8da13311eed08971e1339/transformed/ui-tooling/AndroidManifest.xml:24:13-71
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:10:5-79
-MERGED from [io.grpc:grpc-android:1.62.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/b1910650be886248e77a2066f9c1b0f8/transformed/grpc-android-1.62.2/AndroidManifest.xml:7:5-79
-MERGED from [io.grpc:grpc-android:1.62.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/b1910650be886248e77a2066f9c1b0f8/transformed/grpc-android-1.62.2/AndroidManifest.xml:7:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:10:22-76
 uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:11:5-67
+ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/7bac798120c9056dcbb805785c774f3d/transformed/recaptcha-18.6.1/AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/7bac798120c9056dcbb805785c774f3d/transformed/recaptcha-18.6.1/AndroidManifest.xml:7:5-67
 	android:name
-		ADDED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:11:22-64
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:25:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/7bac798120c9056dcbb805785c774f3d/transformed/recaptcha-18.6.1/AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/7bac798120c9056dcbb805785c774f3d/transformed/recaptcha-18.6.1/AndroidManifest.xml:8:5-79
+MERGED from [io.grpc:grpc-android:1.62.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/b1910650be886248e77a2066f9c1b0f8/transformed/grpc-android-1.62.2/AndroidManifest.xml:7:5-79
+MERGED from [io.grpc:grpc-android:1.62.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/b1910650be886248e77a2066f9c1b0f8/transformed/grpc-android-1.62.2/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:26:22-76
+activity#com.google.firebase.auth.internal.GenericIdpActivity
+ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:29:9-46:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:31:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:33:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:32:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:34:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:30:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
+ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:35:13-45:29
+action#android.intent.action.VIEW
+ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:36:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:38:17-76
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:38:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:39:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:39:27-75
+data
+ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:41:17-44:51
+	android:path
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:43:21-37
+	android:host
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:42:21-49
+	android:scheme
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:44:21-48
+activity#com.google.firebase.auth.internal.RecaptchaActivity
+ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:47:9-64:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:49:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:51:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:50:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:52:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:48:13-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
+ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:53:13-63:29
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:14:9-23:19
+ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:66:9-72:19
+MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:14:9-23:19
+MERGED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:14:9-23:19
 MERGED from [com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:30:9-38:19
 MERGED from [com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:30:9-38:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:16:13-37
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:68:13-37
 	tools:targetApi
 		ADDED from [com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:34:13-32
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:32:13-43
 	android:name
-		ADDED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:15:13-84
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:67:13-84
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:69:13-71:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:71:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:70:17-109
 meta-data#com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar
 ADDED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:17:13-19:85
 	android:value
@@ -386,14 +500,60 @@ ADDED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya
 		ADDED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:22:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:21:17-111
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+service#androidx.credentials.playservices.CredentialProviderMetadataHolder
+ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:24:9-32:19
+	android:enabled
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:26:13-35
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:28:13-60
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:25:13-94
+meta-data#androidx.credentials.CREDENTIAL_PROVIDER_KEY
+ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:29:13-31:104
+	android:value
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:31:17-101
+	android:name
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:30:17-76
+activity#androidx.credentials.playservices.HiddenActivity
+ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:34:9-41:20
+	android:fitsSystemWindows
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:39:13-45
+	android:enabled
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:38:13-37
+	android:configChanges
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:36:13-87
+	android:theme
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:40:13-48
+	android:name
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:35:13-76
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
+	android:visibleToInstantApps
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/7bac798120c9056dcbb805785c774f3d/transformed/recaptcha-18.6.1/AndroidManifest.xml:9:5-98
+	android:name
+		ADDED from [com.google.android.recaptcha:recaptcha:18.6.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/7bac798120c9056dcbb805785c774f3d/transformed/recaptcha-18.6.1/AndroidManifest.xml:9:22-95
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:23:9-28:39
 	android:authorities
@@ -412,6 +572,14 @@ ADDED from [com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.g
 		ADDED from [com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:37:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:36:17-109
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.5.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/485047339f93db4e046d36a84eaf09b9/transformed/window-1.5.0/AndroidManifest.xml:23:9-25:40
 	android:required
@@ -528,3 +696,13 @@ action#androidx.profileinstaller.action.BENCHMARK_OPERATION
 ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
 	android:name
 		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+activity#com.google.android.play.core.common.PlayCoreDialogWrapperActivity
+ADDED from [com.google.android.play:core-common:2.0.3] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e68f57678ae6a6c87f42aff2c7025154/transformed/core-common-2.0.3/AndroidManifest.xml:14:9-18:65
+	android:stateNotNeeded
+		ADDED from [com.google.android.play:core-common:2.0.3] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e68f57678ae6a6c87f42aff2c7025154/transformed/core-common-2.0.3/AndroidManifest.xml:17:13-42
+	android:exported
+		ADDED from [com.google.android.play:core-common:2.0.3] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e68f57678ae6a6c87f42aff2c7025154/transformed/core-common-2.0.3/AndroidManifest.xml:16:13-37
+	android:theme
+		ADDED from [com.google.android.play:core-common:2.0.3] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e68f57678ae6a6c87f42aff2c7025154/transformed/core-common-2.0.3/AndroidManifest.xml:18:13-62
+	android:name
+		ADDED from [com.google.android.play:core-common:2.0.3] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e68f57678ae6a6c87f42aff2c7025154/transformed/core-common-2.0.3/AndroidManifest.xml:15:13-93

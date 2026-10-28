@@ -11,222 +11,364 @@
 9        android:targetSdkVersion="36" />
 9-->INJECTED
 10
-11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-12    <!-- <uses-sdk android:minSdkVersion="21" /> -->
-13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->[com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:10:5-79
-13-->[com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:10:22-76
-14    <uses-permission android:name="android.permission.INTERNET" />
-14-->[com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:11:5-67
-14-->[com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:11:22-64
-15
-16    <permission
-16-->[androidx.core:core:1.19.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/3c197ebbb4501dbd2687aac325fae8ee/transformed/core-1.19.0/AndroidManifest.xml:22:5-24:47
-17        android:name="edu.uph.m24si2.aquaponicaapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-17-->[androidx.core:core:1.19.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/3c197ebbb4501dbd2687aac325fae8ee/transformed/core-1.19.0/AndroidManifest.xml:23:9-81
-18        android:protectionLevel="signature" />
-18-->[androidx.core:core:1.19.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/3c197ebbb4501dbd2687aac325fae8ee/transformed/core-1.19.0/AndroidManifest.xml:24:9-44
-19
-20    <uses-permission android:name="edu.uph.m24si2.aquaponicaapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-20-->[androidx.core:core:1.19.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/3c197ebbb4501dbd2687aac325fae8ee/transformed/core-1.19.0/AndroidManifest.xml:26:5-97
-20-->[androidx.core:core:1.19.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/3c197ebbb4501dbd2687aac325fae8ee/transformed/core-1.19.0/AndroidManifest.xml:26:22-94
-21
-22    <application
-22-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:5:5-25:19
-23        android:allowBackup="true"
-23-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:6:9-35
-24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-24-->[androidx.core:core:1.19.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/3c197ebbb4501dbd2687aac325fae8ee/transformed/core-1.19.0/AndroidManifest.xml:28:18-86
-25        android:dataExtractionRules="@xml/data_extraction_rules"
-25-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:7:9-65
-26        android:debuggable="true"
-27        android:extractNativeLibs="false"
-27-->INJECTED
-28        android:fullBackupContent="@xml/backup_rules"
-28-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:8:9-54
-29        android:icon="@mipmap/ic_launcher"
-29-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:9:9-43
-30        android:label="@string/app_name"
-30-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:10:9-41
-31        android:roundIcon="@mipmap/ic_launcher_round"
-31-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:11:9-54
-32        android:supportsRtl="true"
-32-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:12:9-35
-33        android:testOnly="true"
-34        android:theme="@style/Theme.AQUAPONICA" >
-34-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:13:9-48
-35        <activity
-35-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:14:9-24:20
-36            android:name="edu.uph.m24si2.aquaponica.MainActivity"
-36-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:15:13-41
-37            android:exported="true"
-37-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:16:13-36
-38            android:label="@string/app_name"
-38-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:17:13-45
-39            android:theme="@style/Theme.AQUAPONICA" >
-39-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:18:13-52
-40            <intent-filter>
-40-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:19:13-23:29
-41                <action android:name="android.intent.action.MAIN" />
-41-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:20:17-69
-41-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:20:25-66
-42
-43                <category android:name="android.intent.category.LAUNCHER" />
-43-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:22:17-77
-43-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:22:27-74
-44            </intent-filter>
-45        </activity>
-46        <activity
-46-->[androidx.compose.ui:ui-tooling-android:1.10.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/aacd303376c8da13311eed08971e1339/transformed/ui-tooling/AndroidManifest.xml:23:9-25:39
-47            android:name="androidx.compose.ui.tooling.PreviewActivity"
-47-->[androidx.compose.ui:ui-tooling-android:1.10.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/aacd303376c8da13311eed08971e1339/transformed/ui-tooling/AndroidManifest.xml:24:13-71
-48            android:exported="true" />
-48-->[androidx.compose.ui:ui-tooling-android:1.10.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/aacd303376c8da13311eed08971e1339/transformed/ui-tooling/AndroidManifest.xml:25:13-36
-49
-50        <service
-50-->[com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:14:9-23:19
-51            android:name="com.google.firebase.components.ComponentDiscoveryService"
-51-->[com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:15:13-84
-52            android:directBootAware="true"
-52-->[com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:32:13-43
-53            android:exported="false" >
-53-->[com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:16:13-37
-54            <meta-data
-54-->[com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:17:13-19:85
-55                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
-55-->[com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:18:17-122
-56                android:value="com.google.firebase.components.ComponentRegistrar" />
-56-->[com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:19:17-82
-57            <meta-data
-57-->[com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:20:13-22:85
-58                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-58-->[com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:21:17-111
-59                android:value="com.google.firebase.components.ComponentRegistrar" />
-59-->[com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:22:17-82
-60            <meta-data
-60-->[com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:35:13-37:85
-61                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-61-->[com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:36:17-109
-62                android:value="com.google.firebase.components.ComponentRegistrar" />
-62-->[com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:37:17-82
-63        </service>
-64
-65        <activity
-65-->[com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
-66            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-66-->[com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
-67            android:exported="false"
-67-->[com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
-68            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-68-->[com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
-69
-70        <provider
-70-->[com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:23:9-28:39
-71            android:name="com.google.firebase.provider.FirebaseInitProvider"
-71-->[com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:24:13-77
-72            android:authorities="edu.uph.m24si2.aquaponicaapp.firebaseinitprovider"
-72-->[com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:25:13-72
-73            android:directBootAware="true"
-73-->[com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:26:13-43
-74            android:exported="false"
-74-->[com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:27:13-37
-75            android:initOrder="100" />
-75-->[com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:28:13-36
-76
-77        <uses-library
-77-->[androidx.window:window:1.5.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/485047339f93db4e046d36a84eaf09b9/transformed/window-1.5.0/AndroidManifest.xml:23:9-25:40
-78            android:name="androidx.window.extensions"
-78-->[androidx.window:window:1.5.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/485047339f93db4e046d36a84eaf09b9/transformed/window-1.5.0/AndroidManifest.xml:24:13-54
-79            android:required="false" />
-79-->[androidx.window:window:1.5.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/485047339f93db4e046d36a84eaf09b9/transformed/window-1.5.0/AndroidManifest.xml:25:13-37
-80        <uses-library
-80-->[androidx.window:window:1.5.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/485047339f93db4e046d36a84eaf09b9/transformed/window-1.5.0/AndroidManifest.xml:26:9-28:40
-81            android:name="androidx.window.sidecar"
-81-->[androidx.window:window:1.5.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/485047339f93db4e046d36a84eaf09b9/transformed/window-1.5.0/AndroidManifest.xml:27:13-51
-82            android:required="false" />
-82-->[androidx.window:window:1.5.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/485047339f93db4e046d36a84eaf09b9/transformed/window-1.5.0/AndroidManifest.xml:28:13-37
-83
-84        <provider
-84-->[androidx.emoji2:emoji2:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/432b185e02fa8d068c1d1a3f8e79d1d8/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
-85            android:name="androidx.startup.InitializationProvider"
-85-->[androidx.emoji2:emoji2:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/432b185e02fa8d068c1d1a3f8e79d1d8/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
-86            android:authorities="edu.uph.m24si2.aquaponicaapp.androidx-startup"
-86-->[androidx.emoji2:emoji2:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/432b185e02fa8d068c1d1a3f8e79d1d8/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
-87            android:exported="false" >
-87-->[androidx.emoji2:emoji2:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/432b185e02fa8d068c1d1a3f8e79d1d8/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
-88            <meta-data
-88-->[androidx.emoji2:emoji2:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/432b185e02fa8d068c1d1a3f8e79d1d8/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
-89                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-89-->[androidx.emoji2:emoji2:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/432b185e02fa8d068c1d1a3f8e79d1d8/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
-90                android:value="androidx.startup" />
-90-->[androidx.emoji2:emoji2:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/432b185e02fa8d068c1d1a3f8e79d1d8/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
-91            <meta-data
-91-->[androidx.lifecycle:lifecycle-process:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/f07928f9f17dcbc8e45e4d11f2527e3e/transformed/lifecycle-process-2.11.0/AndroidManifest.xml:29:13-31:52
-92                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-92-->[androidx.lifecycle:lifecycle-process:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/f07928f9f17dcbc8e45e4d11f2527e3e/transformed/lifecycle-process-2.11.0/AndroidManifest.xml:30:17-78
-93                android:value="androidx.startup" />
-93-->[androidx.lifecycle:lifecycle-process:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/f07928f9f17dcbc8e45e4d11f2527e3e/transformed/lifecycle-process-2.11.0/AndroidManifest.xml:31:17-49
-94            <meta-data
-94-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
-95                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-95-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
-96                android:value="androidx.startup" />
-96-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
-97        </provider>
-98
-99        <meta-data
-99-->[com.google.android.gms:play-services-basement:18.8.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e3ae24dfa510043ae5077418f4bfb6bb/transformed/play-services-basement-18.8.0/AndroidManifest.xml:21:9-23:69
-100            android:name="com.google.android.gms.version"
-100-->[com.google.android.gms:play-services-basement:18.8.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e3ae24dfa510043ae5077418f4bfb6bb/transformed/play-services-basement-18.8.0/AndroidManifest.xml:22:13-58
-101            android:value="@integer/google_play_services_version" />
-101-->[com.google.android.gms:play-services-basement:18.8.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e3ae24dfa510043ae5077418f4bfb6bb/transformed/play-services-basement-18.8.0/AndroidManifest.xml:23:13-66
-102
-103        <activity
-103-->[androidx.compose.ui:ui-test-manifest:1.10.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2213a15e2b6be3316c6d7d030662bc0d/transformed/ui-test-manifest-1.10.4/AndroidManifest.xml:23:9-26:79
-104            android:name="androidx.activity.ComponentActivity"
-104-->[androidx.compose.ui:ui-test-manifest:1.10.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2213a15e2b6be3316c6d7d030662bc0d/transformed/ui-test-manifest-1.10.4/AndroidManifest.xml:24:13-63
-105            android:exported="true"
-105-->[androidx.compose.ui:ui-test-manifest:1.10.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2213a15e2b6be3316c6d7d030662bc0d/transformed/ui-test-manifest-1.10.4/AndroidManifest.xml:25:13-36
-106            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
-106-->[androidx.compose.ui:ui-test-manifest:1.10.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2213a15e2b6be3316c6d7d030662bc0d/transformed/ui-test-manifest-1.10.4/AndroidManifest.xml:26:13-76
-107
-108        <receiver
-108-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
-109            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-109-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
-110            android:directBootAware="false"
-110-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
-111            android:enabled="true"
-111-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
-112            android:exported="true"
-112-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
-113            android:permission="android.permission.DUMP" >
-113-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
-114            <intent-filter>
-114-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
-115                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-115-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
-115-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
-116            </intent-filter>
-117            <intent-filter>
-117-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
-118                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-118-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
-118-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
-119            </intent-filter>
-120            <intent-filter>
-120-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
-121                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-121-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
-121-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
-122            </intent-filter>
-123            <intent-filter>
-123-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
-124                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-124-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
-124-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
-125            </intent-filter>
-126        </receiver>
-127    </application>
-128
-129</manifest>
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:25:5-67
+11-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:25:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:26:5-79
+12-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:26:22-76
+13    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+13-->[com.google.android.recaptcha:recaptcha:18.6.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/7bac798120c9056dcbb805785c774f3d/transformed/recaptcha-18.6.1/AndroidManifest.xml:9:5-98
+13-->[com.google.android.recaptcha:recaptcha:18.6.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/7bac798120c9056dcbb805785c774f3d/transformed/recaptcha-18.6.1/AndroidManifest.xml:9:22-95
+14
+15    <permission
+15-->[androidx.core:core:1.19.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/3c197ebbb4501dbd2687aac325fae8ee/transformed/core-1.19.0/AndroidManifest.xml:22:5-24:47
+16        android:name="edu.uph.m24si2.aquaponicaapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+16-->[androidx.core:core:1.19.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/3c197ebbb4501dbd2687aac325fae8ee/transformed/core-1.19.0/AndroidManifest.xml:23:9-81
+17        android:protectionLevel="signature" />
+17-->[androidx.core:core:1.19.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/3c197ebbb4501dbd2687aac325fae8ee/transformed/core-1.19.0/AndroidManifest.xml:24:9-44
+18
+19    <uses-permission android:name="edu.uph.m24si2.aquaponicaapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+19-->[androidx.core:core:1.19.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/3c197ebbb4501dbd2687aac325fae8ee/transformed/core-1.19.0/AndroidManifest.xml:26:5-97
+19-->[androidx.core:core:1.19.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/3c197ebbb4501dbd2687aac325fae8ee/transformed/core-1.19.0/AndroidManifest.xml:26:22-94
+20
+21    <application
+21-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:5:5-25:19
+22        android:allowBackup="true"
+22-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:6:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.19.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/3c197ebbb4501dbd2687aac325fae8ee/transformed/core-1.19.0/AndroidManifest.xml:28:18-86
+24        android:dataExtractionRules="@xml/data_extraction_rules"
+24-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:7:9-65
+25        android:debuggable="true"
+26        android:extractNativeLibs="false"
+26-->INJECTED
+27        android:fullBackupContent="@xml/backup_rules"
+27-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:8:9-54
+28        android:icon="@mipmap/ic_launcher"
+28-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:9:9-43
+29        android:label="@string/app_name"
+29-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:10:9-41
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:11:9-54
+31        android:supportsRtl="true"
+31-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:12:9-35
+32        android:testOnly="true"
+33        android:theme="@style/Theme.AQUAPONICA" >
+33-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:13:9-48
+34        <activity
+34-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:14:9-24:20
+35            android:name="edu.uph.m24si2.aquaponica.MainActivity"
+35-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:15:13-41
+36            android:exported="true"
+36-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:16:13-36
+37            android:label="@string/app_name"
+37-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:17:13-45
+38            android:theme="@style/Theme.AQUAPONICA" >
+38-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:18:13-52
+39            <intent-filter>
+39-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:19:13-23:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:20:17-69
+40-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:20:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:22:17-77
+42-->/Users/evelynprakusya/Aquaponica_App/app/src/main/AndroidManifest.xml:22:27-74
+43            </intent-filter>
+44        </activity>
+45        <activity
+45-->[androidx.compose.ui:ui-tooling-android:1.10.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/aacd303376c8da13311eed08971e1339/transformed/ui-tooling/AndroidManifest.xml:23:9-25:39
+46            android:name="androidx.compose.ui.tooling.PreviewActivity"
+46-->[androidx.compose.ui:ui-tooling-android:1.10.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/aacd303376c8da13311eed08971e1339/transformed/ui-tooling/AndroidManifest.xml:24:13-71
+47            android:exported="true" />
+47-->[androidx.compose.ui:ui-tooling-android:1.10.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/aacd303376c8da13311eed08971e1339/transformed/ui-tooling/AndroidManifest.xml:25:13-36
+48        <activity
+48-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:29:9-46:20
+49            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+49-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:30:13-80
+50            android:excludeFromRecents="true"
+50-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:31:13-46
+51            android:exported="true"
+51-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:32:13-36
+52            android:launchMode="singleTask"
+52-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:33:13-44
+53            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+53-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:34:13-72
+54            <intent-filter>
+54-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:35:13-45:29
+55                <action android:name="android.intent.action.VIEW" />
+55-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:36:17-69
+55-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:36:25-66
+56
+57                <category android:name="android.intent.category.DEFAULT" />
+57-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:38:17-76
+57-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:38:27-73
+58                <category android:name="android.intent.category.BROWSABLE" />
+58-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:39:17-78
+58-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:39:27-75
+59
+60                <data
+60-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:41:17-44:51
+61                    android:host="firebase.auth"
+61-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:42:21-49
+62                    android:path="/"
+62-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:43:21-37
+63                    android:scheme="genericidp" />
+63-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:44:21-48
+64            </intent-filter>
+65        </activity>
+66        <activity
+66-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:47:9-64:20
+67            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+67-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:48:13-79
+68            android:excludeFromRecents="true"
+68-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:49:13-46
+69            android:exported="true"
+69-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:50:13-36
+70            android:launchMode="singleTask"
+70-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:51:13-44
+71            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+71-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:52:13-72
+72            <intent-filter>
+72-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:53:13-63:29
+73                <action android:name="android.intent.action.VIEW" />
+73-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:36:17-69
+73-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:36:25-66
+74
+75                <category android:name="android.intent.category.DEFAULT" />
+75-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:38:17-76
+75-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:38:27-73
+76                <category android:name="android.intent.category.BROWSABLE" />
+76-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:39:17-78
+76-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:39:27-75
+77
+78                <data
+78-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:41:17-44:51
+79                    android:host="firebase.auth"
+79-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:42:21-49
+80                    android:path="/"
+80-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:43:21-37
+81                    android:scheme="recaptcha" />
+81-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:44:21-48
+82            </intent-filter>
+83        </activity>
+84
+85        <service
+85-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:66:9-72:19
+86            android:name="com.google.firebase.components.ComponentDiscoveryService"
+86-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:67:13-84
+87            android:directBootAware="true"
+87-->[com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:32:13-43
+88            android:exported="false" >
+88-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:68:13-37
+89            <meta-data
+89-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:69:13-71:85
+90                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+90-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:70:17-109
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.firebase:firebase-auth:24.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/178f08e7e88dfda7fc7a4c23cc3d4943/transformed/firebase-auth-24.0.1/AndroidManifest.xml:71:17-82
+92            <meta-data
+92-->[com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:17:13-19:85
+93                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+93-->[com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:18:17-122
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:19:17-82
+95            <meta-data
+95-->[com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:20:13-22:85
+96                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+96-->[com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:21:17-111
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.firebase:firebase-firestore:26.0.2] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ae36312be567d4a16e5fd11a858fc580/transformed/firebase-firestore-26.0.2/AndroidManifest.xml:22:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:35:13-37:85
+99                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+99-->[com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:36:17-109
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:37:17-82
+101        </service>
+102        <service
+102-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:24:9-32:19
+103            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+103-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:25:13-94
+104            android:enabled="true"
+104-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:26:13-35
+105            android:exported="false" >
+105-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:27:13-37
+106            <meta-data
+106-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:29:13-31:104
+107                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+107-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:30:17-76
+108                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+108-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:31:17-101
+109        </service>
+110
+111        <activity
+111-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:34:9-41:20
+112            android:name="androidx.credentials.playservices.HiddenActivity"
+112-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:35:13-76
+113            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+113-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:36:13-87
+114            android:enabled="true"
+114-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:37:13-35
+115            android:exported="false"
+115-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:38:13-37
+116            android:fitsSystemWindows="true"
+116-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:39:13-45
+117            android:theme="@style/Theme.Hidden" >
+117-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/95cb25dc019b7c6706e2cf2dc151af1d/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:40:13-48
+118        </activity>
+119        <activity
+119-->[com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
+120            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+120-->[com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
+121            android:excludeFromRecents="true"
+121-->[com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
+122            android:exported="false"
+122-->[com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
+123            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+123-->[com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
+124        <!--
+125            Service handling Google Sign-In user revocation. For apps that do not integrate with
+126            Google Sign-In, this service will never be started.
+127        -->
+128        <service
+128-->[com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
+129            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+129-->[com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
+130            android:exported="true"
+130-->[com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
+131            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+131-->[com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
+132            android:visibleToInstantApps="true" />
+132-->[com.google.android.gms:play-services-auth:20.7.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/1c434aafec83bd34989d23c8aea94b98/transformed/play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
+133
+134        <provider
+134-->[com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:23:9-28:39
+135            android:name="com.google.firebase.provider.FirebaseInitProvider"
+135-->[com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:24:13-77
+136            android:authorities="edu.uph.m24si2.aquaponicaapp.firebaseinitprovider"
+136-->[com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:25:13-72
+137            android:directBootAware="true"
+137-->[com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:26:13-43
+138            android:exported="false"
+138-->[com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:27:13-37
+139            android:initOrder="100" />
+139-->[com.google.firebase:firebase-common:22.0.1] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/c83538230bb35569c7e526eaf107d04f/transformed/firebase-common-22.0.1/AndroidManifest.xml:28:13-36
+140
+141        <activity
+141-->[com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+142            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+142-->[com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+143            android:exported="false"
+143-->[com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+144            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+144-->[com.google.android.gms:play-services-base:18.1.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/200a6b2615e9fce1ca71c1cd259c9f3c/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+145
+146        <uses-library
+146-->[androidx.window:window:1.5.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/485047339f93db4e046d36a84eaf09b9/transformed/window-1.5.0/AndroidManifest.xml:23:9-25:40
+147            android:name="androidx.window.extensions"
+147-->[androidx.window:window:1.5.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/485047339f93db4e046d36a84eaf09b9/transformed/window-1.5.0/AndroidManifest.xml:24:13-54
+148            android:required="false" />
+148-->[androidx.window:window:1.5.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/485047339f93db4e046d36a84eaf09b9/transformed/window-1.5.0/AndroidManifest.xml:25:13-37
+149        <uses-library
+149-->[androidx.window:window:1.5.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/485047339f93db4e046d36a84eaf09b9/transformed/window-1.5.0/AndroidManifest.xml:26:9-28:40
+150            android:name="androidx.window.sidecar"
+150-->[androidx.window:window:1.5.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/485047339f93db4e046d36a84eaf09b9/transformed/window-1.5.0/AndroidManifest.xml:27:13-51
+151            android:required="false" />
+151-->[androidx.window:window:1.5.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/485047339f93db4e046d36a84eaf09b9/transformed/window-1.5.0/AndroidManifest.xml:28:13-37
+152
+153        <provider
+153-->[androidx.emoji2:emoji2:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/432b185e02fa8d068c1d1a3f8e79d1d8/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+154            android:name="androidx.startup.InitializationProvider"
+154-->[androidx.emoji2:emoji2:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/432b185e02fa8d068c1d1a3f8e79d1d8/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
+155            android:authorities="edu.uph.m24si2.aquaponicaapp.androidx-startup"
+155-->[androidx.emoji2:emoji2:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/432b185e02fa8d068c1d1a3f8e79d1d8/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
+156            android:exported="false" >
+156-->[androidx.emoji2:emoji2:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/432b185e02fa8d068c1d1a3f8e79d1d8/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
+157            <meta-data
+157-->[androidx.emoji2:emoji2:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/432b185e02fa8d068c1d1a3f8e79d1d8/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+158                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+158-->[androidx.emoji2:emoji2:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/432b185e02fa8d068c1d1a3f8e79d1d8/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+159                android:value="androidx.startup" />
+159-->[androidx.emoji2:emoji2:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/432b185e02fa8d068c1d1a3f8e79d1d8/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+160            <meta-data
+160-->[androidx.lifecycle:lifecycle-process:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/f07928f9f17dcbc8e45e4d11f2527e3e/transformed/lifecycle-process-2.11.0/AndroidManifest.xml:29:13-31:52
+161                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+161-->[androidx.lifecycle:lifecycle-process:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/f07928f9f17dcbc8e45e4d11f2527e3e/transformed/lifecycle-process-2.11.0/AndroidManifest.xml:30:17-78
+162                android:value="androidx.startup" />
+162-->[androidx.lifecycle:lifecycle-process:2.11.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/f07928f9f17dcbc8e45e4d11f2527e3e/transformed/lifecycle-process-2.11.0/AndroidManifest.xml:31:17-49
+163            <meta-data
+163-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+164                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+164-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+165                android:value="androidx.startup" />
+165-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+166        </provider>
+167
+168        <meta-data
+168-->[com.google.android.gms:play-services-basement:18.8.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e3ae24dfa510043ae5077418f4bfb6bb/transformed/play-services-basement-18.8.0/AndroidManifest.xml:21:9-23:69
+169            android:name="com.google.android.gms.version"
+169-->[com.google.android.gms:play-services-basement:18.8.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e3ae24dfa510043ae5077418f4bfb6bb/transformed/play-services-basement-18.8.0/AndroidManifest.xml:22:13-58
+170            android:value="@integer/google_play_services_version" />
+170-->[com.google.android.gms:play-services-basement:18.8.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e3ae24dfa510043ae5077418f4bfb6bb/transformed/play-services-basement-18.8.0/AndroidManifest.xml:23:13-66
+171
+172        <activity
+172-->[androidx.compose.ui:ui-test-manifest:1.10.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2213a15e2b6be3316c6d7d030662bc0d/transformed/ui-test-manifest-1.10.4/AndroidManifest.xml:23:9-26:79
+173            android:name="androidx.activity.ComponentActivity"
+173-->[androidx.compose.ui:ui-test-manifest:1.10.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2213a15e2b6be3316c6d7d030662bc0d/transformed/ui-test-manifest-1.10.4/AndroidManifest.xml:24:13-63
+174            android:exported="true"
+174-->[androidx.compose.ui:ui-test-manifest:1.10.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2213a15e2b6be3316c6d7d030662bc0d/transformed/ui-test-manifest-1.10.4/AndroidManifest.xml:25:13-36
+175            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
+175-->[androidx.compose.ui:ui-test-manifest:1.10.4] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/2213a15e2b6be3316c6d7d030662bc0d/transformed/ui-test-manifest-1.10.4/AndroidManifest.xml:26:13-76
+176
+177        <receiver
+177-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+178            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+178-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+179            android:directBootAware="false"
+179-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+180            android:enabled="true"
+180-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+181            android:exported="true"
+181-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+182            android:permission="android.permission.DUMP" >
+182-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+183            <intent-filter>
+183-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+184                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+184-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+184-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+185            </intent-filter>
+186            <intent-filter>
+186-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+187                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+187-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+187-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+188            </intent-filter>
+189            <intent-filter>
+189-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+190                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+190-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+190-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+191            </intent-filter>
+192            <intent-filter>
+192-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+193                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+193-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+193-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/ec26e02b3f76774d511dfa78f5da4840/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+194            </intent-filter>
+195        </receiver> <!-- The activities will be merged into the manifest of the hosting app. -->
+196        <activity
+196-->[com.google.android.play:core-common:2.0.3] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e68f57678ae6a6c87f42aff2c7025154/transformed/core-common-2.0.3/AndroidManifest.xml:14:9-18:65
+197            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+197-->[com.google.android.play:core-common:2.0.3] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e68f57678ae6a6c87f42aff2c7025154/transformed/core-common-2.0.3/AndroidManifest.xml:15:13-93
+198            android:exported="false"
+198-->[com.google.android.play:core-common:2.0.3] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e68f57678ae6a6c87f42aff2c7025154/transformed/core-common-2.0.3/AndroidManifest.xml:16:13-37
+199            android:stateNotNeeded="true"
+199-->[com.google.android.play:core-common:2.0.3] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e68f57678ae6a6c87f42aff2c7025154/transformed/core-common-2.0.3/AndroidManifest.xml:17:13-42
+200            android:theme="@style/Theme.PlayCore.Transparent" />
+200-->[com.google.android.play:core-common:2.0.3] /Users/evelynprakusya/.gradle/caches/9.4.1/transforms/e68f57678ae6a6c87f42aff2c7025154/transformed/core-common-2.0.3/AndroidManifest.xml:18:13-62
+201    </application>
+202
+203</manifest>

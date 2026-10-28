@@ -36,6 +36,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.auth.FirebaseAuth
 import edu.uph.m24si2.aquaponica.ui.theme.AQUAPONICATheme
 
 private val AppTeal = Color(0xFF0F8F86)
@@ -61,7 +62,69 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-private enum class Screen { LOGIN, SIGN_UP, MAIN }
+private fun registerUser(
+    name: String,
+    email: String,
+    password: String,
+    onSuccess: () -> Unit,
+    onError: (String) -> Unit
+) {
+    val auth = FirebaseAuth.getInstance()
+    val db = FirebaseFirestore.getInstance()
+
+    auth.createUserWithEmailAndPassword(
+        email.trim(),
+        password
+    ).addOnSuccessListener { result ->
+
+        val uid = result.user?.uid
+
+        if (uid == null) {
+            onError("User ID tidak ditemukan")
+            return@addOnSuccessListener
+        }
+
+        val userData = hashMapOf(
+            "uid" to uid,
+            "name" to name.trim(),
+            "email" to email.trim(),
+            "createdAt" to com.google.firebase.Timestamp.now()
+        )
+
+        db.collection("users")
+            .document(uid)
+            .set(userData)
+            .addOnSuccessListener {
+                onSuccess()
+            }
+            .addOnFailureListener { error ->
+                onError(
+                    "Akun dibuat, tetapi profil gagal disimpan: ${error.localizedMessage}"
+                )
+            }
+
+    }.addOnFailureListener { error ->
+        onError(error.localizedMessage ?: "Registrasi gagal")
+    }
+}
+
+private fun loginUser(
+    email: String,
+    password: String,
+    onSuccess: () -> Unit,
+    onError: (String) -> Unit
+) {
+    FirebaseAuth.getInstance()
+        .signInWithEmailAndPassword(email.trim(), password)
+        .addOnSuccessListener {
+            onSuccess()
+        }
+        .addOnFailureListener { error ->
+            onError(error.localizedMessage ?: "Login gagal")
+        }
+}
+
+private enum class Screen { LOGIN, SIGN_UP, AQUARIUM_SETUP, MAIN }
 
 @Composable
 fun AquaponicaApp() {
@@ -99,14 +162,25 @@ fun AquaponicaApp() {
                 onSignUpSuccess = { name, email ->
                     if (name.isNotBlank()) userName = name
                     if (email.isNotBlank()) userEmail = email
-                    currentScreen = Screen.MAIN
+
+                    currentScreen = Screen.AQUARIUM_SETUP
                 }
+
             )
+
+            Screen.AQUARIUM_SETUP -> {
+                AquariumSetupScreen(
+                    onSetupComplete = {
+                        currentScreen = Screen.MAIN
+                    }
+                )
+            }
 
             Screen.MAIN -> MainShell(
                 userName = userName,
                 userEmail = userEmail,
                 onLogout = {
+                    FirebaseAuth.getInstance().signOut()
                     currentScreen = Screen.LOGIN
                 }
             )
@@ -148,6 +222,8 @@ fun LoginScreen(
 ) {
     var emailOrUsername by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
+    var errorMessage by remember { mutableStateOf("") }
+    var isLoading by remember { mutableStateOf(false) }
 
     Column(
         modifier = Modifier
@@ -225,8 +301,27 @@ fun LoginScreen(
 
         Button(
             onClick = {
-                onLoginSuccess(emailOrUsername)
+                if (emailOrUsername.isBlank() || password.isBlank()) {
+                    errorMessage = "Please enter your email and password"
+                } else if (!isLoading) {
+                    isLoading = true
+                    errorMessage = ""
+
+                    loginUser(
+                        email = emailOrUsername,
+                        password = password,
+                        onSuccess = {
+                            isLoading = false
+                            onLoginSuccess(emailOrUsername.trim())
+                        },
+                        onError = { message ->
+                            isLoading = false
+                            errorMessage = message
+                        }
+                    )
+                }
             },
+
             modifier = Modifier
                 .fillMaxWidth()
                 .height(52.dp),
@@ -241,7 +336,15 @@ fun LoginScreen(
                 fontWeight = FontWeight.Bold
             )
         }
+        if (errorMessage.isNotBlank()) {
+            Spacer(modifier = Modifier.height(8.dp))
 
+            Text(
+                text = errorMessage,
+                color = AppDanger,
+                fontSize = 12.sp
+            )
+        }
         Spacer(modifier = Modifier.height(22.dp))
 
         Row(verticalAlignment = Alignment.CenterVertically) {
@@ -270,6 +373,9 @@ fun SignUpScreen(
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     var confirmPassword by remember { mutableStateOf("") }
+    var errorMessage by remember { mutableStateOf("") }
+    var isLoading by remember { mutableStateOf(false) }
+
 
     Scaffold(
         topBar = {
@@ -360,14 +466,43 @@ fun SignUpScreen(
 
             Button(
                 onClick = {
-                    if (
-                        password == confirmPassword &&
-                        fullName.isNotBlank() &&
-                        email.isNotBlank()
-                    ) {
-                        onSignUpSuccess(fullName, email)
+                    when {
+                        fullName.isBlank() ||
+                                email.isBlank() ||
+                                password.isBlank() ||
+                                confirmPassword.isBlank() -> {
+                            errorMessage = "Please fill in all fields"
+                        }
+
+                        password.length < 6 -> {
+                            errorMessage = "Password must be at least 6 characters"
+                        }
+
+                        password != confirmPassword -> {
+                            errorMessage = "Passwords do not match"
+                        }
+
+                        !isLoading -> {
+                            isLoading = true
+                            errorMessage = ""
+
+                            registerUser(
+                                name = fullName,
+                                email = email,
+                                password = password,
+                                onSuccess = {
+                                    isLoading = false
+                                    onSignUpSuccess(fullName.trim(), email.trim())
+                                },
+                                onError = { message ->
+                                    isLoading = false
+                                    errorMessage = message
+                                }
+                            )
+                        }
                     }
                 },
+
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(52.dp),
@@ -393,27 +528,88 @@ fun SignUpScreen(
     }
 }
 
+
 @Composable
 fun MainShell(
     userName: String,
     userEmail: String,
     onLogout: () -> Unit
 ) {
-    var selectedTab by remember { mutableIntStateOf(0) }
-    var showNotifications by remember { mutableStateOf(false) }
+    var selectedTab by remember {
+        mutableIntStateOf(0)
+    }
+
+    var showNotifications by remember {
+        mutableStateOf(false)
+    }
+
+    var showAquariumDetail by remember {
+        mutableStateOf(false)
+    }
+
+    var showAquariumEdit by remember {
+        mutableStateOf(false)
+    }
+
+    var selectedAquarium by remember {
+        mutableStateOf<Aquarium?>(null)
+    }
+    var dashboardRefreshKey by remember { mutableIntStateOf(0) }
+    var showAquariumSetup by remember { mutableStateOf(false) }
 
     if (showNotifications) {
         NotificationsScreen(
-            onBack = { showNotifications = false }
+            onBack = {
+                showNotifications = false
+            }
         )
+
+    } else if (showAquariumEdit && selectedAquarium != null) {
+
+        AquariumEditScreen(
+            aquarium = selectedAquarium!!,
+            onBack = {
+                showAquariumEdit = false
+                showAquariumDetail = true
+            },
+            onSaveSuccess = {
+                dashboardRefreshKey++
+                showAquariumEdit = false
+                showAquariumDetail = true
+            }
+        )
+
+    } else if (showAquariumDetail) {
+
+        AquariumDetailScreen(
+            onBack = {
+                showAquariumDetail = false
+            },
+            onEdit = { aquarium ->
+                selectedAquarium = aquarium
+                showAquariumDetail = false
+                showAquariumEdit = true
+            },
+            onDeleteSuccess = {
+                dashboardRefreshKey++
+                showAquariumDetail = false
+                selectedTab = 0
+            }
+        )
+
     } else {
+
         Scaffold(
             bottomBar = {
                 NavigationBar(
                     containerColor = Color.White
                 ) {
                     val items = listOf(
-                        "Home", "Monitoring", "Control", "History", "Profile"
+                        "Home",
+                        "Monitoring",
+                        "Control",
+                        "History",
+                        "Profile"
                     )
 
                     val icons = listOf(
@@ -425,13 +621,21 @@ fun MainShell(
                     )
 
                     items.forEachIndexed { index, label ->
+
                         NavigationBarItem(
                             selected = selectedTab == index,
-                            onClick = { selectedTab = index },
-                            icon = {
-                                Icon(icons[index], contentDescription = label)
+                            onClick = {
+                                selectedTab = index
                             },
-                            label = { Text(label) },
+                            icon = {
+                                Icon(
+                                    imageVector = icons[index],
+                                    contentDescription = label
+                                )
+                            },
+                            label = {
+                                Text(label)
+                            },
                             colors = NavigationBarItemDefaults.colors(
                                 selectedIconColor = AppTeal,
                                 selectedTextColor = AppTeal,
@@ -443,18 +647,33 @@ fun MainShell(
             },
             containerColor = AppBg
         ) { padding ->
-            Box(modifier = Modifier.padding(padding)) {
+
+            Box(
+                modifier = Modifier.padding(padding)
+            ) {
                 when (selectedTab) {
-                    0 -> DashboardScreen(userName) {
-                        showNotifications = true
-                    }
+
+                    0 -> DashboardScreen(
+                        userName = userName,
+                        onOpenNotifications = {
+                            showNotifications = true
+                        },
+                        refreshKey = dashboardRefreshKey
+                    )
+
                     1 -> MonitoringScreen()
+
                     2 -> ControlScreen()
+
                     3 -> HistoryScreen()
+
                     4 -> ProfileScreen(
-                        userName,
-                        userEmail,
-                        onLogout
+                        userName = userName,
+                        userEmail = userEmail,
+                        onLogout = onLogout,
+                        onMyAquariumClick = {
+                            showAquariumDetail = true
+                        }
                     )
                 }
             }
@@ -462,11 +681,53 @@ fun MainShell(
     }
 }
 
+
 @Composable
 fun DashboardScreen(
     userName: String,
-    onOpenNotifications: () -> Unit
+    onOpenNotifications: () -> Unit,
+    refreshKey: Int = 0
 ) {
+    var aquarium by remember {
+        mutableStateOf<Aquarium?>(null)
+    }
+
+    var aquariumError by remember {
+        mutableStateOf("")
+    }
+
+    var isAquariumLoading by remember {
+        mutableStateOf(true)
+    }
+
+    val repository = remember {
+        AquariumRepository()
+    }
+
+    val currentUid = FirebaseAuth.getInstance().currentUser?.uid
+
+    LaunchedEffect(refreshKey, currentUid) {
+        aquarium = null
+        aquariumError = ""
+        isAquariumLoading = true
+
+        if (currentUid == null) {
+            aquariumError = "Silakan login terlebih dahulu."
+            isAquariumLoading = false
+        } else {
+            repository.getAquarium(
+                onSuccess = { result ->
+                    aquarium = result
+                    isAquariumLoading = false
+                },
+                onError = { error ->
+                    aquariumError = error
+                    isAquariumLoading = false
+                }
+            )
+        }
+    }
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -546,7 +807,7 @@ fun DashboardScreen(
         ) {
             Column(modifier = Modifier.padding(18.dp)) {
                 Text(
-                    "AquaHome",
+                    text = aquarium?.name ?: "My Aquarium",
                     fontSize = 20.sp,
                     fontWeight = FontWeight.Bold,
                     color = AppText
@@ -559,7 +820,18 @@ fun DashboardScreen(
                 )
                 Spacer(modifier = Modifier.height(12.dp))
                 Text(
-                    "60 cm Aquarium • Tilapia + Kangkung",
+                    text = when {
+                        isAquariumLoading -> "Loading aquarium data..."
+
+                        aquariumError.isNotEmpty() ->
+                            "Gagal mengambil data: $aquariumError"
+
+                        aquarium != null ->
+                            "${aquarium!!.lengthCm.toInt()} cm Aquarium • " +
+                                    "${aquarium!!.fishType} + ${aquarium!!.plantType}"
+
+                        else -> "Aquarium belum dikonfigurasi"
+                    },
                     fontSize = 11.sp,
                     fontWeight = FontWeight.SemiBold,
                     color = AppTealDark
@@ -1314,7 +1586,8 @@ fun NotificationItem(
 fun ProfileScreen(
     userName: String,
     userEmail: String,
-    onLogout: () -> Unit
+    onLogout: () -> Unit,
+    onMyAquariumClick: () -> Unit
 ) {
     Column(
         modifier = Modifier
@@ -1368,11 +1641,18 @@ fun ProfileScreen(
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        SettingsItem(
-            Icons.Default.Water,
-            "My Aquarium",
-            "AquaHome"
-        )
+        Box(
+            modifier = Modifier.clickable {
+                onMyAquariumClick()
+            }
+        ) {
+            SettingsItem(
+                Icons.Default.Water,
+                title = "My Aquarium",
+                value = "View Details"
+            )
+        }
+
         SettingsItem(
             Icons.Outlined.Restaurant,
             "Feeding Schedule",

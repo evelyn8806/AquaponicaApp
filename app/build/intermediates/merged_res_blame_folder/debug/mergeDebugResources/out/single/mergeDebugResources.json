@@ -1,66 +1,142 @@
 [
     {
-        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "edu.uph.m24si2.aquaponica.app-main-55:/drawable/ic_launcher_foreground.xml"
+        "merged": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-main-55:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "edu.uph.m24si2.aquaponica.app-main-55:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-main-55:/mipmap-anydpi/ic_launcher.xml"
     },
     {
-        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "edu.uph.m24si2.aquaponica.app-main-55:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-main-55:/mipmap-anydpi/ic_launcher_round.xml"
     },
     {
-        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "edu.uph.m24si2.aquaponica.app-main-55:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/font_poppins_extrabold.ttf.flat",
+        "source": "edu.uph.m24si2.aquaponica.app-main-55:/font/poppins_extrabold.ttf"
     },
     {
-        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "edu.uph.m24si2.aquaponica.app-main-55:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/font_poppins_semibold.ttf.flat",
+        "source": "edu.uph.m24si2.aquaponica.app-main-55:/font/poppins_semibold.ttf"
     },
     {
-        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/drawable_ic_launcher_background.xml.flat",
-        "source": "edu.uph.m24si2.aquaponica.app-main-55:/drawable/ic_launcher_background.xml"
+        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/font_poppins_semibolditalic.ttf.flat",
+        "source": "edu.uph.m24si2.aquaponica.app-main-55:/font/poppins_semibolditalic.ttf"
     },
     {
-        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "edu.uph.m24si2.aquaponica.app-main-55:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-main-55:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-anydpi_ic_launcher.xml.flat",
-        "source": "edu.uph.m24si2.aquaponica.app-main-55:/mipmap-anydpi/ic_launcher.xml"
+        "merged": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-debug-53:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-main-55:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "edu.uph.m24si2.aquaponica.app-main-55:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-main-55:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-anydpi_ic_launcher_round.xml.flat",
-        "source": "edu.uph.m24si2.aquaponica.app-main-55:/mipmap-anydpi/ic_launcher_round.xml"
+        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/font_poppins_black.ttf.flat",
+        "source": "edu.uph.m24si2.aquaponica.app-main-55:/font/poppins_black.ttf"
     },
     {
-        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "edu.uph.m24si2.aquaponica.app-main-55:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-main-55:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/xml_backup_rules.xml.flat",
-        "source": "edu.uph.m24si2.aquaponica.app-main-55:/xml/backup_rules.xml"
+        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/font_poppins_extralightitalic.ttf.flat",
+        "source": "edu.uph.m24si2.aquaponica.app-main-55:/font/poppins_extralightitalic.ttf"
     },
     {
-        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "edu.uph.m24si2.aquaponica.app-main-55:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/font_poppins_thinitalic.ttf.flat",
+        "source": "edu.uph.m24si2.aquaponica.app-main-55:/font/poppins_thinitalic.ttf"
     },
     {
-        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/xml_data_extraction_rules.xml.flat",
-        "source": "edu.uph.m24si2.aquaponica.app-main-55:/xml/data_extraction_rules.xml"
+        "merged": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-main-55:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "edu.uph.m24si2.aquaponica.app-main-55:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-main-55:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "edu.uph.m24si2.aquaponica.app-main-55:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/font_poppins_lightitalic.ttf.flat",
+        "source": "edu.uph.m24si2.aquaponica.app-main-55:/font/poppins_lightitalic.ttf"
+    },
+    {
+        "merged": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-debug-53:/drawable_aquaponica_logo.jpg.flat",
+        "source": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-main-55:/drawable/aquaponica_logo.jpg"
+    },
+    {
+        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/font_poppins_blackitalic.ttf.flat",
+        "source": "edu.uph.m24si2.aquaponica.app-main-55:/font/poppins_blackitalic.ttf"
+    },
+    {
+        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/font_poppins_extrabolditalic.ttf.flat",
+        "source": "edu.uph.m24si2.aquaponica.app-main-55:/font/poppins_extrabolditalic.ttf"
+    },
+    {
+        "merged": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-debug-53:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-main-55:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-main-55:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-debug-53:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-main-55:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/font_poppins_bolditalic.ttf.flat",
+        "source": "edu.uph.m24si2.aquaponica.app-main-55:/font/poppins_bolditalic.ttf"
+    },
+    {
+        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/font_poppins_thin.ttf.flat",
+        "source": "edu.uph.m24si2.aquaponica.app-main-55:/font/poppins_thin.ttf"
+    },
+    {
+        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/font_poppins_medium.ttf.flat",
+        "source": "edu.uph.m24si2.aquaponica.app-main-55:/font/poppins_medium.ttf"
+    },
+    {
+        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/font_poppins_regular.ttf.flat",
+        "source": "edu.uph.m24si2.aquaponica.app-main-55:/font/poppins_regular.ttf"
+    },
+    {
+        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/font_poppins_extralight.ttf.flat",
+        "source": "edu.uph.m24si2.aquaponica.app-main-55:/font/poppins_extralight.ttf"
+    },
+    {
+        "merged": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-main-55:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/font_poppins_bold.ttf.flat",
+        "source": "edu.uph.m24si2.aquaponica.app-main-55:/font/poppins_bold.ttf"
+    },
+    {
+        "merged": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-main-55:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-debug-53:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-main-55:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/font_poppins_italic.ttf.flat",
+        "source": "edu.uph.m24si2.aquaponica.app-main-55:/font/poppins_italic.ttf"
+    },
+    {
+        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/font_poppins_mediumitalic.ttf.flat",
+        "source": "edu.uph.m24si2.aquaponica.app-main-55:/font/poppins_mediumitalic.ttf"
+    },
+    {
+        "merged": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-debug-53:/xml_backup_rules.xml.flat",
+        "source": "/Users/evelynprakusya/.gradle/daemon/9.4.1/edu.uph.m24si2.aquaponica.app-main-55:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "edu.uph.m24si2.aquaponica.app-debug-53:/font_poppins_light.ttf.flat",
+        "source": "edu.uph.m24si2.aquaponica.app-main-55:/font/poppins_light.ttf"
     }
 ]

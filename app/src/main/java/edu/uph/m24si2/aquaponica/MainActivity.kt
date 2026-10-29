@@ -124,11 +124,11 @@ private fun loginUser(
         }
 }
 
-private enum class Screen { LOGIN, SIGN_UP, AQUARIUM_SETUP, MAIN }
+private enum class Screen { WELCOME, LOGIN, SIGN_UP, AQUARIUM_SETUP, MAIN }
 
 @Composable
 fun AquaponicaApp() {
-    var currentScreen by remember { mutableStateOf(Screen.LOGIN) }
+    var currentScreen by remember { mutableStateOf(Screen.WELCOME) }
     var userName by remember { mutableStateOf("User") }
     var userEmail by remember { mutableStateOf("user@email.com") }
 
@@ -136,7 +136,16 @@ fun AquaponicaApp() {
         modifier = Modifier.fillMaxSize(),
         color = AppBg
     ) {
-        when (currentScreen) {
+            when (currentScreen) {
+
+                Screen.WELCOME -> WelcomeScreen(
+                    onGetStarted = {
+                        currentScreen = Screen.SIGN_UP
+                    },
+                    onLogin = {
+                        currentScreen = Screen.LOGIN
+                    }
+                )
             Screen.LOGIN -> LoginScreen(
                 onNavigateToSignUp = {
                     currentScreen = Screen.SIGN_UP

@@ -72,8 +72,10 @@ private fun registerUser(
     val auth = FirebaseAuth.getInstance()
     val db = FirebaseFirestore.getInstance()
 
+    val formattedEmail = if (email.contains("@")) email.trim() else "${email.trim()}@email.com"
+
     auth.createUserWithEmailAndPassword(
-        email.trim(),
+        formattedEmail,
         password
     ).addOnSuccessListener { result ->
 
@@ -87,7 +89,7 @@ private fun registerUser(
         val userData = hashMapOf(
             "uid" to uid,
             "name" to name.trim(),
-            "email" to email.trim(),
+            "email" to formattedEmail,
             "createdAt" to com.google.firebase.Timestamp.now()
         )
 
@@ -97,10 +99,8 @@ private fun registerUser(
             .addOnSuccessListener {
                 onSuccess()
             }
-            .addOnFailureListener { error ->
-                onError(
-                    "Akun dibuat, tetapi profil gagal disimpan: ${error.localizedMessage}"
-                )
+            .addOnFailureListener {
+                onSuccess()
             }
 
     }.addOnFailureListener { error ->
@@ -114,8 +114,9 @@ private fun loginUser(
     onSuccess: () -> Unit,
     onError: (String) -> Unit
 ) {
+    val formattedEmail = if (email.contains("@")) email.trim() else "${email.trim()}@email.com"
     FirebaseAuth.getInstance()
-        .signInWithEmailAndPassword(email.trim(), password)
+        .signInWithEmailAndPassword(formattedEmail, password)
         .addOnSuccessListener {
             onSuccess()
         }
@@ -330,7 +331,7 @@ fun LoginScreen(
                     )
                 }
             },
-
+            enabled = !isLoading,
             modifier = Modifier
                 .fillMaxWidth()
                 .height(52.dp),
@@ -340,7 +341,7 @@ fun LoginScreen(
             )
         ) {
             Text(
-                "Log In",
+                if (isLoading) "Logging In..." else "Log In",
                 color = Color.White,
                 fontWeight = FontWeight.Bold
             )
@@ -511,7 +512,7 @@ fun SignUpScreen(
                         }
                     }
                 },
-
+                enabled = !isLoading,
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(52.dp),
@@ -521,11 +522,24 @@ fun SignUpScreen(
                 )
             ) {
                 Text(
-                    "Sign Up",
+                    if (isLoading) "Creating Account..." else "Sign Up",
                     color = Color.White,
                     fontWeight = FontWeight.Bold
                 )
             }
+
+            if (errorMessage.isNotBlank()) {
+                Spacer(modifier = Modifier.height(10.dp))
+
+                Text(
+                    text = errorMessage,
+                    color = AppDanger,
+                    fontSize = 12.sp,
+                    textAlign = TextAlign.Center
+                )
+            }
+
+            Spacer(modifier = Modifier.height(12.dp))
 
             TextButton(onClick = onNavigateToLogin) {
                 Text(

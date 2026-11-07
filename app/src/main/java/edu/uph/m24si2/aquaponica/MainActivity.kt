@@ -4,8 +4,10 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.animation.core.*
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -32,12 +34,16 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import edu.uph.m24si2.aquaponica.ui.theme.AQUAPONICATheme
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.material.icons.filled.Info
 
 private val AppTeal = Color(0xFF0F8F86)
 private val AppTealDark = Color(0xFF08766F)
@@ -49,6 +55,12 @@ private val AppMuted = Color(0xFF718985)
 private val AppLine = Color(0xFFDCEBE6)
 private val AppWarning = Color(0xFFE9A62B)
 private val AppDanger = Color(0xFFE66B62)
+
+private val AquaPoppins = FontFamily(
+    Font(R.font.poppins_light, FontWeight.Light),
+    Font(R.font.poppins_medium, FontWeight.Medium),
+    Font(R.font.poppins_bold, FontWeight.Bold)
+)
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -379,6 +391,7 @@ fun SignUpScreen(
     onNavigateToLogin: () -> Unit,
     onSignUpSuccess: (String, String) -> Unit
 ) {
+
     var fullName by remember { mutableStateOf("") }
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
@@ -386,15 +399,23 @@ fun SignUpScreen(
     var errorMessage by remember { mutableStateOf("") }
     var isLoading by remember { mutableStateOf(false) }
 
+    var showPassword by remember { mutableStateOf(false) }
+    var showConfirmPassword by remember { mutableStateOf(false) }
+
+    val aquaDark = Color(0xFF164A43)
+    val aquaMuted = Color(0xFF718985)
+    val aquaBackground = Color(0xFFF5FAF7)
+
 
     Scaffold(
+        containerColor = aquaBackground,
         topBar = {
             TopAppBar(
                 title = {
                     Text(
                         "Create Account",
-                        color = AppText,
-                        fontWeight = FontWeight.Bold
+                        color = aquaDark,
+                        fontWeight = FontWeight.SemiBold
                     )
                 },
                 navigationIcon = {
@@ -402,154 +423,612 @@ fun SignUpScreen(
                         Icon(
                             Icons.AutoMirrored.Filled.ArrowBack,
                             contentDescription = "Back",
-                            tint = AppText
+                            tint = aquaDark
                         )
                     }
                 },
                 colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = AppBg
+                    containerColor = aquaBackground
                 )
             )
-        },
-        containerColor = AppBg
+        }
     ) { padding ->
+
         Column(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(padding)
+                .imePadding()
                 .verticalScroll(rememberScrollState())
-                .padding(horizontal = 26.dp, vertical = 10.dp),
+                .padding(horizontal = 22.dp, vertical = 12.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+
             Text(
-                "Start monitoring your aquaponic system.",
-                color = AppMuted,
-                textAlign = TextAlign.Center
+                text = "YOUR LITTLE ECOSYSTEM",
+                fontSize = 11.sp,
+                fontWeight = FontWeight.SemiBold,
+                color = AppTeal,
+                letterSpacing = 1.5.sp
             )
 
-            Spacer(modifier = Modifier.height(24.dp))
+            Spacer(Modifier.height(6.dp))
 
-            OutlinedTextField(
-                value = fullName,
-                onValueChange = { fullName = it },
-                label = { Text("Full Name") },
-                singleLine = true,
-                modifier = Modifier.fillMaxWidth()
+            Text(
+                text = "Let's Grow Together.",
+                fontFamily = AquaPoppins,
+                fontSize = 25.sp,
+                fontWeight = FontWeight.Bold,
+                color = aquaDark,
+                textAlign = TextAlign.Center,
+                letterSpacing = (-0.5).sp
             )
 
-            Spacer(modifier = Modifier.height(12.dp))
 
-            OutlinedTextField(
-                value = email,
-                onValueChange = { email = it },
-                label = { Text("Email") },
-                singleLine = true,
-                keyboardOptions = KeyboardOptions(
-                    keyboardType = KeyboardType.Email
-                ),
-                modifier = Modifier.fillMaxWidth()
+
+            Spacer(Modifier.height(6.dp))
+
+            Text(
+                text = "Create your account and bring your\n" +
+                        "aquaponic world to life.",
+                fontFamily = AquaPoppins,
+                fontSize = 13.sp,
+                fontWeight = FontWeight.Medium,
+                color = aquaMuted,
+                textAlign = TextAlign.Center,
+                lineHeight = 21.sp
             )
 
-            Spacer(modifier = Modifier.height(12.dp))
 
-            OutlinedTextField(
-                value = password,
-                onValueChange = { password = it },
-                label = { Text("Password") },
-                singleLine = true,
-                visualTransformation = PasswordVisualTransformation(),
-                modifier = Modifier.fillMaxWidth()
-            )
+            Spacer(Modifier.height(18.dp))
 
-            Spacer(modifier = Modifier.height(12.dp))
-
-            OutlinedTextField(
-                value = confirmPassword,
-                onValueChange = { confirmPassword = it },
-                label = { Text("Confirm Password") },
-                singleLine = true,
-                visualTransformation = PasswordVisualTransformation(),
-                modifier = Modifier.fillMaxWidth()
-            )
-
-            Spacer(modifier = Modifier.height(22.dp))
-
-            Button(
-                onClick = {
-                    when {
-                        fullName.isBlank() ||
-                                email.isBlank() ||
-                                password.isBlank() ||
-                                confirmPassword.isBlank() -> {
-                            errorMessage = "Please fill in all fields"
-                        }
-
-                        password.length < 6 -> {
-                            errorMessage = "Password must be at least 6 characters"
-                        }
-
-                        password != confirmPassword -> {
-                            errorMessage = "Passwords do not match"
-                        }
-
-                        !isLoading -> {
-                            isLoading = true
-                            errorMessage = ""
-
-                            registerUser(
-                                name = fullName,
-                                email = email,
-                                password = password,
-                                onSuccess = {
-                                    isLoading = false
-                                    onSignUpSuccess(fullName.trim(), email.trim())
-                                },
-                                onError = { message ->
-                                    isLoading = false
-                                    errorMessage = message
-                                }
-                            )
-                        }
-                    }
-                },
-                enabled = !isLoading,
+            BotanicalAquaSignUpIllustration(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(52.dp),
-                shape = RoundedCornerShape(15.dp),
-                colors = ButtonDefaults.buttonColors(
-                    containerColor = AppTeal
-                )
+                    .height(145.dp)
+            )
+
+            Spacer(Modifier.height(12.dp))
+
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clip(RoundedCornerShape(24.dp))
+                    .background(Color.White)
+                    .border(
+                        1.dp,
+                        Color(0xFFE3EFE9),
+                        RoundedCornerShape(24.dp)
+                    )
+                    .padding(18.dp),
+                verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
-                Text(
-                    if (isLoading) "Creating Account..." else "Sign Up",
-                    color = Color.White,
-                    fontWeight = FontWeight.Bold
+
+                OutlinedTextField(
+                    value = fullName,
+                    onValueChange = { fullName = it },
+                    label = {
+                        Text(
+                            "Full Name",
+                            fontFamily = AquaPoppins,
+                            fontSize = 12.sp
+                        )
+                    },
+                    singleLine = true,
+                    textStyle = androidx.compose.ui.text.TextStyle(
+                        fontFamily = AquaPoppins,
+                        fontSize = 14.sp,
+                        color = AppText
+                    ),
+                    modifier = Modifier.fillMaxWidth(),
+                    shape = RoundedCornerShape(14.dp),
+                    colors = botanicalAquaFieldColors()
                 )
+
+                OutlinedTextField(
+                    value = email,
+                    onValueChange = { email = it },
+                    label = { Text("Email Address") },
+                    keyboardOptions = KeyboardOptions(
+                        keyboardType = KeyboardType.Email
+                    ),
+                    singleLine = true,
+                    textStyle = androidx.compose.ui.text.TextStyle(
+                        fontFamily = AquaPoppins,
+                        fontSize = 14.sp,
+                        color = AppText
+                    ),
+                    modifier = Modifier.fillMaxWidth(),
+                    shape = RoundedCornerShape(14.dp),
+                    colors = botanicalAquaFieldColors()
+                )
+
+                OutlinedTextField(
+                    value = password,
+                    onValueChange = { password = it },
+                    label = { Text("Password") },
+                    visualTransformation =
+                        if (showPassword) {
+                            VisualTransformation.None
+                        } else {
+                            PasswordVisualTransformation()
+                        },
+                    trailingIcon = {
+                        IconButton(
+                            onClick = {
+                                showPassword = !showPassword
+                            }
+                        ) {
+                            Icon(
+                                imageVector =
+                                    if (showPassword)
+                                        Icons.Default.VisibilityOff
+                                    else
+                                        Icons.Default.Visibility,
+                                contentDescription =
+                                    if (showPassword)
+                                        "Hide password"
+                                    else
+                                        "Show password"
+                            )
+                        }
+                    },
+                    singleLine = true,
+                    textStyle = androidx.compose.ui.text.TextStyle(
+                        fontFamily = AquaPoppins,
+                        fontSize = 14.sp,
+                        color = AppText
+                    ),
+                    modifier = Modifier.fillMaxWidth(),
+                    shape = RoundedCornerShape(14.dp),
+                    colors = botanicalAquaFieldColors()
+                )
+
+                OutlinedTextField(
+                    value = confirmPassword,
+                    onValueChange = {
+                        confirmPassword = it
+                    },
+                    label = { Text("Confirm Password") },
+                    visualTransformation =
+                        if (showConfirmPassword) {
+                            VisualTransformation.None
+                        } else {
+                            PasswordVisualTransformation()
+                        },
+                    trailingIcon = {
+                        IconButton(
+                            onClick = {
+                                showConfirmPassword =
+                                    !showConfirmPassword
+                            }
+                        ) {
+                            Icon(
+                                imageVector =
+                                    if (showConfirmPassword)
+                                        Icons.Default.VisibilityOff
+                                    else
+                                        Icons.Default.Visibility,
+                                contentDescription =
+                                    if (showConfirmPassword)
+                                        "Hide password"
+                                    else
+                                        "Show password"
+                            )
+                        }
+                    },
+                    singleLine = true,
+                    textStyle = androidx.compose.ui.text.TextStyle(
+                        fontFamily = AquaPoppins,
+                        fontSize = 14.sp,
+                        color = AppText
+                    ),
+                    modifier = Modifier.fillMaxWidth(),
+                    shape = RoundedCornerShape(14.dp),
+                    colors = botanicalAquaFieldColors()
+                )
+
+                Text(
+                    text = "Use at least 6 characters for your password.",
+                    fontSize = 11.sp,
+                    color = aquaMuted
+                )
+
+                if (errorMessage.isNotBlank()) {
+                    Text(
+                        text = errorMessage,
+                        color = AppDanger,
+                        fontSize = 12.sp
+                    )
+                }
+
+                Button(
+                    onClick = {
+                        // Original validation and Firebase flow
+                        when {
+                            fullName.isBlank() ||
+                                    email.isBlank() ||
+                                    password.isBlank() ||
+                                    confirmPassword.isBlank() -> {
+                                errorMessage =
+                                    "Please fill in all fields"
+                            }
+
+                            password.length < 6 -> {
+                                errorMessage =
+                                    "Password must be at least 6 characters"
+                            }
+
+                            password != confirmPassword -> {
+                                errorMessage =
+                                    "Passwords do not match"
+                            }
+
+                            !isLoading -> {
+                                isLoading = true
+                                errorMessage = ""
+
+                                registerUser(
+                                    name = fullName,
+                                    email = email,
+                                    password = password,
+                                    onSuccess = {
+                                        isLoading = false
+                                        onSignUpSuccess(
+                                            fullName.trim(),
+                                            email.trim()
+                                        )
+                                    },
+                                    onError = { message ->
+                                        isLoading = false
+                                        errorMessage = message
+                                    }
+                                )
+                            }
+                        }
+                    },
+                    enabled = !isLoading,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(54.dp),
+                    shape = RoundedCornerShape(16.dp),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = AppTeal
+                    )
+                ) {
+                    if (isLoading) {
+                        CircularProgressIndicator(
+                            modifier = Modifier.size(20.dp),
+                            color = Color.White,
+                            strokeWidth = 2.dp
+                        )
+                    } else {
+                        Text(
+                            "Create My Account",
+                            fontWeight = FontWeight.SemiBold,
+                            fontSize = 15.sp
+                        )
+                    }
+                }
             }
 
-            if (errorMessage.isNotBlank()) {
-                Spacer(modifier = Modifier.height(10.dp))
+            Spacer(Modifier.height(8.dp))
 
+            TextButton(
+                onClick = onNavigateToLogin,
+                modifier = Modifier.fillMaxWidth()
+            ) {
                 Text(
-                    text = errorMessage,
-                    color = AppDanger,
+                    text = "Already have an account? Log In",
+                    fontFamily = AquaPoppins,
                     fontSize = 12.sp,
+                    fontWeight = FontWeight.Medium,
+                    color = AppTeal,
                     textAlign = TextAlign.Center
                 )
             }
 
-            Spacer(modifier = Modifier.height(12.dp))
-
-            TextButton(onClick = onNavigateToLogin) {
-                Text(
-                    "Already have an account? Log In",
-                    color = AppTeal
-                )
-            }
+            Spacer(Modifier.height(8.dp))
         }
     }
 }
+
+@Composable
+private fun botanicalAquaFieldColors() =
+    OutlinedTextFieldDefaults.colors(
+        focusedBorderColor = AppTeal,
+        unfocusedBorderColor = Color(0xFFDCEBE6),
+        focusedLabelColor = AppTeal,
+        unfocusedLabelColor = Color(0xFF718985),
+        cursorColor = AppTeal,
+        focusedContainerColor = Color.White,
+        unfocusedContainerColor = Color.White
+    )
+
+
+
+@Composable
+private fun BotanicalAquaSignUpIllustration(
+    modifier: Modifier = Modifier
+) {
+    val transition = rememberInfiniteTransition(
+        label = "AquaponicAnimation"
+    )
+
+    // Animasi ikan berenang
+    val swim by transition.animateFloat(
+        initialValue = -8f,
+        targetValue = 10f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(
+                durationMillis = 3200,
+                easing = LinearEasing
+            ),
+            repeatMode = RepeatMode.Reverse
+        ),
+        label = "FishSwim"
+    )
+
+    // Animasi gelembung naik
+    val bubbles by transition.animateFloat(
+        initialValue = 0f,
+        targetValue = 1f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(
+                durationMillis = 4200,
+                easing = LinearEasing
+            ),
+            repeatMode = RepeatMode.Restart
+        ),
+        label = "Bubbles"
+    )
+
+    // BARU: tanaman bergoyang lembut
+    val leafSway by transition.animateFloat(
+        initialValue = -3.5f,
+        targetValue = 3.5f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(
+                durationMillis = 2600,
+                easing = FastOutSlowInEasing
+            ),
+            repeatMode = RepeatMode.Reverse
+        ),
+        label = "LeafSway"
+    )
+
+    // BARU: permukaan air bergerak perlahan
+    val waterWave by transition.animateFloat(
+        initialValue = -1.5f,
+        targetValue = 1.5f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(
+                durationMillis = 3000,
+                easing = FastOutSlowInEasing
+            ),
+            repeatMode = RepeatMode.Reverse
+        ),
+        label = "WaterWave"
+    )
+
+    Canvas(
+        modifier = modifier
+            .clip(RoundedCornerShape(22.dp))
+            .background(Color(0xFFE2F5EE))
+    ) {
+        val sx = size.width / 320f
+        val sy = size.height / 130f
+
+        fun pt(x: Float, y: Float) =
+            Offset(x * sx, y * sy)
+
+        // Akuarium dan air
+        drawRoundRect(
+            color = Color(0xFF7CD2D0).copy(alpha = 0.55f),
+            topLeft = pt(20f, 51f),
+            size = androidx.compose.ui.geometry.Size(
+                280f * sx,
+                69f * sy
+            ),
+            cornerRadius =
+                androidx.compose.ui.geometry.CornerRadius(
+                    14f * sx,
+                    14f * sy
+                )
+        )
+
+        // BARU: permukaan air bergelombang
+        val wavePath = Path().apply {
+            moveTo(22f * sx, (56f + waterWave) * sy)
+
+            cubicTo(
+                85f * sx, (53f - waterWave) * sy,
+                130f * sx, (59f + waterWave) * sy,
+                180f * sx, 56f * sy
+            )
+
+            cubicTo(
+                225f * sx, (53f - waterWave) * sy,
+                265f * sx, (59f + waterWave) * sy,
+                298f * sx, (56f + waterWave) * sy
+            )
+        }
+
+        drawPath(
+            path = wavePath,
+            color = Color(0xFF32A7A0),
+            style = Stroke(width = 2f * sx)
+        )
+
+        // Tanaman dengan gerakan daun
+        listOf(75f, 160f, 245f).forEachIndexed { index, x ->
+
+            // Setiap tanaman bergerak sedikit berbeda
+            val sway = leafSway *
+                    if (index == 1) -0.75f else 1f
+
+            val tipX = x + sway
+
+            drawLine(
+                color = Color(0xFF438C69),
+                start = pt(x, 55f),
+                end = pt(tipX, 16f),
+                strokeWidth = 2.5f * sx
+            )
+
+            val leftLeaf = Path().apply {
+                moveTo((tipX - 1f) * sx, 37f * sy)
+
+                quadraticTo(
+                    (tipX - 27f) * sx, 17f * sy,
+                    (tipX - 19f) * sx, 10f * sy
+                )
+
+                quadraticTo(
+                    (tipX + 1f) * sx, 15f * sy,
+                    (tipX - 1f) * sx, 37f * sy
+                )
+
+                close()
+            }
+
+            drawPath(
+                leftLeaf,
+                Color(0xFF72B98B)
+            )
+
+            val rightLeaf = Path().apply {
+                moveTo(tipX * sx, 32f * sy)
+
+                quadraticTo(
+                    (tipX + 28f) * sx, 11f * sy,
+                    (tipX + 21f) * sx, 6f * sy
+                )
+
+                quadraticTo(
+                    (tipX + 1f) * sx, 9f * sy,
+                    tipX * sx, 32f * sy
+                )
+
+                close()
+            }
+
+            drawPath(
+                rightLeaf,
+                Color(0xFF439C72)
+            )
+
+            // Akar tanaman tetap pada posisi awal
+            drawLine(
+                color = Color(0xFFC6A37A),
+                start = pt(x, 56f),
+                end = pt(x - 4f, 76f),
+                strokeWidth = 1.4f * sx
+            )
+        }
+
+        // Bentuk ikan
+        fun drawFish(
+            x: Float,
+            y: Float,
+            color: Color,
+            scale: Float
+        ) {
+            val body = Path().apply {
+                moveTo(
+                    (x - 17f * scale) * sx,
+                    y * sy
+                )
+
+                quadraticTo(
+                    x * sx,
+                    (y - 12f * scale) * sy,
+                    (x + 17f * scale) * sx,
+                    y * sy
+                )
+
+                quadraticTo(
+                    x * sx,
+                    (y + 12f * scale) * sy,
+                    (x - 17f * scale) * sx,
+                    y * sy
+                )
+
+                close()
+            }
+
+            drawPath(body, color)
+
+            val tail = Path().apply {
+                moveTo(
+                    (x - 15f * scale) * sx,
+                    y * sy
+                )
+
+                lineTo(
+                    (x - 28f * scale) * sx,
+                    (y - 9f * scale) * sy
+                )
+
+                lineTo(
+                    (x - 28f * scale) * sx,
+                    (y + 9f * scale) * sy
+                )
+
+                close()
+            }
+
+            drawPath(tail, color)
+
+            drawCircle(
+                color = Color.White,
+                radius = 1.7f * sx,
+                center = pt(
+                    x + 9f * scale,
+                    y - 2f * scale
+                )
+            )
+        }
+
+        // Ikan pertama
+        drawFish(
+            x = 108f + swim,
+            y = 94f,
+            color = Color(0xFF178E9A),
+            scale = 1f
+        )
+
+        // Ikan kedua
+        drawFish(
+            x = 224f - swim * 0.7f,
+            y = 87f,
+            color = Color(0xFFF0A36C),
+            scale = 0.8f
+        )
+
+        // Gelembung naik ke permukaan
+        listOf(
+            Triple(145f, 108f, 3.5f),
+            Triple(155f, 88f, 2.5f),
+            Triple(270f, 112f, 3f)
+        ).forEach { (x, y, radius) ->
+
+            val bubbleY =
+                59f + (
+                        (y - 59f - bubbles * 49f + 49f) % 49f
+                        )
+
+            drawCircle(
+                color = Color.White.copy(alpha = 0.8f),
+                radius = radius * sx,
+                center = pt(x, bubbleY),
+                style = Stroke(width = 1.4f * sx)
+            )
+        }
+    }
+}
+
+
 
 
 @Composable
@@ -705,12 +1184,17 @@ fun MainShell(
 }
 
 
+
 @Composable
 fun DashboardScreen(
     userName: String,
     onOpenNotifications: () -> Unit,
     refreshKey: Int = 0
 ) {
+    // ==========================================
+    // 1. FIRESTORE - TETAP DIPERTAHANKAN
+    // ==========================================
+
     var aquarium by remember {
         mutableStateOf<Aquarium?>(null)
     }
@@ -751,75 +1235,63 @@ fun DashboardScreen(
         }
     }
 
+    // Belum ada integrasi sensor ESP32.
+    // Jangan menganggap nilai contoh sebagai data nyata.
+    val isDeviceConnected = false
+
+    val hasAquarium = aquarium != null
+
+    // ==========================================
+    // 2. DASHBOARD UI
+    // ==========================================
+
     Column(
         modifier = Modifier
             .fillMaxSize()
             .verticalScroll(rememberScrollState())
             .padding(20.dp)
     ) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            Column(modifier = Modifier.weight(1f)) {
+
+        // HEADER
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Column(
+                modifier = Modifier.weight(1f)
+            ) {
                 Text(
-                    "Hello, $userName!",
+                    text = "Hello, $userName!",
                     fontSize = 24.sp,
                     fontWeight = FontWeight.Bold,
                     color = AppText
                 )
+
+                Spacer(Modifier.height(4.dp))
+
                 Text(
-                    "Your aquaponic system is running well.",
+                    text = "Let's take care of your little ecosystem.",
                     fontSize = 12.sp,
                     color = AppMuted
                 )
             }
 
-            IconButton(onClick = onOpenNotifications) {
+            IconButton(
+                onClick = onOpenNotifications
+            ) {
                 Icon(
-                    Icons.Outlined.Notifications,
+                    imageVector = Icons.Outlined.Notifications,
                     contentDescription = "Notifications",
                     tint = AppText
                 )
             }
         }
 
-        Spacer(modifier = Modifier.height(18.dp))
+        Spacer(Modifier.height(18.dp))
 
-        Card(
-            modifier = Modifier.fillMaxWidth(),
-            shape = RoundedCornerShape(22.dp),
-            colors = CardDefaults.cardColors(
-                containerColor = AppTeal
-            )
-        ) {
-            Row(
-                modifier = Modifier.padding(18.dp),
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Icon(
-                    Icons.Default.CheckCircle,
-                    contentDescription = null,
-                    tint = Color.White,
-                    modifier = Modifier.size(32.dp)
-                )
-
-                Spacer(modifier = Modifier.width(14.dp))
-
-                Column {
-                    Text(
-                        "System Status",
-                        color = Color.White.copy(alpha = 0.8f),
-                        fontSize = 12.sp
-                    )
-                    Text(
-                        "Normal",
-                        color = Color.White,
-                        fontSize = 18.sp,
-                        fontWeight = FontWeight.Bold
-                    )
-                }
-            }
-        }
-
-        Spacer(modifier = Modifier.height(16.dp))
+        // ==========================================
+        // 3. IoT CONNECTION STATUS
+        // ==========================================
 
         Card(
             modifier = Modifier.fillMaxWidth(),
@@ -828,125 +1300,403 @@ fun DashboardScreen(
                 containerColor = AppMint
             )
         ) {
-            Column(modifier = Modifier.padding(18.dp)) {
+            Column(
+                modifier = Modifier.padding(18.dp)
+            ) {
+
+                Row(
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Info,
+                        contentDescription = null,
+                        tint = AppTeal,
+                        modifier = Modifier.size(26.dp)
+                    )
+
+                    Spacer(Modifier.width(10.dp))
+
+                    Text(
+                        text = if (isDeviceConnected) {
+                            "Device Connected"
+                        } else {
+                            "Device Not Connected"
+                        },
+                        fontSize = 17.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = AppText
+                    )
+                }
+
+                Spacer(Modifier.height(10.dp))
+
+                Text(
+                    text = "Your aquarium profile is ready. " +
+                            "Connect your ESP32 to start " +
+                            "monitoring real-time water conditions.",
+                    fontSize = 12.sp,
+                    color = AppMuted
+                )
+
+                Spacer(Modifier.height(12.dp))
+
+                Text(
+                    text = "IoT connection setup coming soon",
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    color = AppTeal
+                )
+            }
+        }
+
+        Spacer(Modifier.height(16.dp))
+
+        // ==========================================
+        // 4. AQUARIUM PROFILE - FIRESTORE
+        // ==========================================
+
+        Card(
+            modifier = Modifier.fillMaxWidth(),
+            shape = RoundedCornerShape(22.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = AppMint
+            )
+        ) {
+            Column(
+                modifier = Modifier.padding(18.dp)
+            ) {
                 Text(
                     text = aquarium?.name ?: "My Aquarium",
                     fontSize = 20.sp,
                     fontWeight = FontWeight.Bold,
                     color = AppText
                 )
-                Spacer(modifier = Modifier.height(6.dp))
+
+                Spacer(Modifier.height(6.dp))
+
                 Text(
-                    "Your smart aquaponic ecosystem.",
+                    text = "Your smart aquaponic ecosystem.",
                     fontSize = 13.sp,
                     color = AppMuted
                 )
-                Spacer(modifier = Modifier.height(12.dp))
+
+                Spacer(Modifier.height(12.dp))
+
                 Text(
                     text = when {
-                        isAquariumLoading -> "Loading aquarium data..."
+                        isAquariumLoading -> {
+                            "Loading aquarium data..."
+                        }
 
-                        aquariumError.isNotEmpty() ->
+                        aquariumError.isNotEmpty() -> {
                             "Gagal mengambil data: $aquariumError"
+                        }
 
-                        aquarium != null ->
-                            "${aquarium!!.lengthCm.toInt()} cm Aquarium • " +
-                                    "${aquarium!!.fishType} + ${aquarium!!.plantType}"
+                        aquarium != null -> {
+                            val savedAquarium = aquarium!!
 
-                        else -> "Aquarium belum dikonfigurasi"
+                            "${savedAquarium.lengthCm.toInt()} × " +
+                                    "${savedAquarium.widthCm.toInt()} × " +
+                                    "${savedAquarium.heightCm.toInt()} cm • " +
+                                    "${savedAquarium.fishType} + " +
+                                    savedAquarium.plantType
+                        }
+
+                        else -> {
+                            "Aquarium belum dikonfigurasi"
+                        }
                     },
-                    fontSize = 11.sp,
+                    fontSize = 12.sp,
                     fontWeight = FontWeight.SemiBold,
                     color = AppTealDark
                 )
             }
         }
 
-        Spacer(modifier = Modifier.height(20.dp))
+        Spacer(Modifier.height(20.dp))
+
+        // ==========================================
+        // 5. WATER OVERVIEW
+        // ==========================================
 
         Text(
-            "Water Overview",
+            text = "Water Overview",
             fontSize = 17.sp,
             fontWeight = FontWeight.Bold,
             color = AppText
         )
-        Spacer(modifier = Modifier.height(10.dp))
 
-        Row(modifier = Modifier.fillMaxWidth()) {
-            Box(modifier = Modifier.weight(1f)) {
+        Spacer(Modifier.height(6.dp))
+
+        Text(
+            text = "Live readings will appear when sensors are connected.",
+            fontSize = 12.sp,
+            color = AppMuted
+        )
+
+        Spacer(Modifier.height(12.dp))
+
+        Row(
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Box(
+                modifier = Modifier.weight(1f)
+            ) {
                 MetricCard(
                     Icons.Outlined.WaterDrop,
                     "Water Level",
-                    "82%",
-                    "Normal"
+                    "--",
+                    "Awaiting sensor"
                 )
             }
-            Spacer(modifier = Modifier.width(10.dp))
-            Box(modifier = Modifier.weight(1f)) {
+
+            Spacer(Modifier.width(10.dp))
+
+            Box(
+                modifier = Modifier.weight(1f)
+            ) {
                 MetricCard(
                     Icons.Outlined.Waves,
                     "Turbidity",
-                    "35 NTU",
-                    "Good"
+                    "--",
+                    "Awaiting sensor"
                 )
             }
         }
 
-        Spacer(modifier = Modifier.height(10.dp))
+        Spacer(Modifier.height(10.dp))
 
-        Row(modifier = Modifier.fillMaxWidth()) {
-            Box(modifier = Modifier.weight(1f)) {
+        Row(
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Box(
+                modifier = Modifier.weight(1f)
+            ) {
                 MetricCard(
                     Icons.Outlined.Thermostat,
                     "Temperature",
-                    "27.4°C",
-                    "Normal"
+                    "--",
+                    "Awaiting sensor"
                 )
             }
-            Spacer(modifier = Modifier.width(10.dp))
-            Box(modifier = Modifier.weight(1f)) {
+
+            Spacer(Modifier.width(10.dp))
+
+            Box(
+                modifier = Modifier.weight(1f)
+            ) {
                 MetricCard(
                     Icons.Outlined.Science,
                     "pH",
-                    "7.1",
-                    "Normal"
+                    "--",
+                    "Awaiting sensor"
                 )
             }
         }
 
-        Spacer(modifier = Modifier.height(20.dp))
+        Spacer(Modifier.height(20.dp))
+
+        // ==========================================
+        // 6. SYSTEM CONTROLS STATUS
+        // ==========================================
 
         Text(
-            "System",
+            text = "System",
             fontSize = 17.sp,
             fontWeight = FontWeight.Bold,
             color = AppText
         )
-        Spacer(modifier = Modifier.height(10.dp))
 
-        Row(modifier = Modifier.fillMaxWidth()) {
-            Box(modifier = Modifier.weight(1f)) {
-                SystemTile(Icons.Default.Water, "Pump", "ON")
+        Spacer(Modifier.height(6.dp))
+
+        Text(
+            text = "Equipment status will appear after IoT integration.",
+            fontSize = 12.sp,
+            color = AppMuted
+        )
+
+        Spacer(Modifier.height(12.dp))
+
+        Row(
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Box(
+                modifier = Modifier.weight(1f)
+            ) {
+                SystemTile(
+                    Icons.Default.Water,
+                    "Pump",
+                    "Unknown"
+                )
             }
-            Spacer(modifier = Modifier.width(10.dp))
-            Box(modifier = Modifier.weight(1f)) {
-                SystemTile(Icons.Default.Air, "Aerator", "ON")
+
+            Spacer(Modifier.width(10.dp))
+
+            Box(
+                modifier = Modifier.weight(1f)
+            ) {
+                SystemTile(
+                    Icons.Default.Air,
+                    "Aerator",
+                    "Unknown"
+                )
             }
         }
 
-        Spacer(modifier = Modifier.height(22.dp))
+        Spacer(Modifier.height(22.dp))
+
+        // ==========================================
+        // 7. AQUACARE ASSISTANT
+        // ==========================================
+
+        Card(
+            modifier = Modifier.fillMaxWidth(),
+            shape = RoundedCornerShape(22.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.White
+            )
+        ) {
+            Column(
+                modifier = Modifier.padding(18.dp)
+            ) {
+                Row(
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Info,
+                        contentDescription = null,
+                        tint = AppTeal,
+                        modifier = Modifier.size(24.dp)
+                    )
+
+                    Spacer(Modifier.width(10.dp))
+
+                    Text(
+                        text = "AquaCare Assistant",
+                        fontSize = 17.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = AppText
+                    )
+                }
+
+                Spacer(Modifier.height(12.dp))
+
+                Text(
+                    text = when {
+                        isAquariumLoading -> {
+                            "Preparing your aquarium guide..."
+                        }
+
+                        aquariumError.isNotEmpty() -> {
+                            "We couldn't load your aquarium."
+                        }
+
+                        hasAquarium -> {
+                            "Your aquarium profile is ready!"
+                        }
+
+                        else -> {
+                            "Let's prepare your aquarium!"
+                        }
+                    },
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    color = AppText
+                )
+
+                Spacer(Modifier.height(8.dp))
+
+                Text(
+                    text = "Before connecting your sensors, " +
+                            "check that the aquarium is filled " +
+                            "appropriately and all equipment " +
+                            "is installed safely.",
+                    fontSize = 12.sp,
+                    color = AppMuted
+                )
+
+                Spacer(Modifier.height(12.dp))
+
+                HorizontalDivider(
+                    color = AppMint
+                )
+
+                Spacer(Modifier.height(12.dp))
+
+                Text(
+                    text = "Getting Started",
+                    fontSize = 13.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = AppText
+                )
+
+                Spacer(Modifier.height(8.dp))
+
+                Text(
+                    text = "1. Prepare your aquarium and plants.",
+                    fontSize = 12.sp,
+                    color = AppMuted
+                )
+
+                Spacer(Modifier.height(6.dp))
+
+                Text(
+                    text = "2. Connect ESP32 and your sensors.",
+                    fontSize = 12.sp,
+                    color = AppMuted
+                )
+
+                Spacer(Modifier.height(6.dp))
+
+                Text(
+                    text = "3. Check water readings in Monitoring.",
+                    fontSize = 12.sp,
+                    color = AppMuted
+                )
+
+                Spacer(Modifier.height(6.dp))
+
+                Text(
+                    text = "4. Use Control only after equipment " +
+                            "is connected and tested.",
+                    fontSize = 12.sp,
+                    color = AppMuted
+                )
+
+                Spacer(Modifier.height(12.dp))
+
+                Text(
+                    text = "Tip: Start with the ESP32 and " +
+                            "water level sensor. More sensors " +
+                            "can be added later.",
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Medium,
+                    color = AppTeal
+                )
+            }
+        }
+
+        Spacer(Modifier.height(22.dp))
+
+        // ==========================================
+        // 8. FIREBASE CONNECTION TEST
+        // ==========================================
 
         Text(
-            "Firebase Connection",
+            text = "Firebase Connection",
             fontSize = 17.sp,
             fontWeight = FontWeight.Bold,
             color = AppText
         )
-        Spacer(modifier = Modifier.height(10.dp))
+
+        Spacer(Modifier.height(10.dp))
 
         FirebaseConnectionTestButton()
+
+        Spacer(Modifier.height(20.dp))
     }
 }
+
 
 @Composable
 fun FirebaseConnectionTestButton() {
